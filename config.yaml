@@ -31,11 +31,11 @@ markup:
     startLevel: 2
 params:
   custom_theme: ''
-  customheadingFontFamily: Fraunces
-  customtextFontFamily: Commissioner
+  customheadingFontFamily: ''
+  customtextFontFamily: ''
   description: A modern, beautiful, and easily configurable blog theme for Hugo.
   favicon: /img/favicon.ico
-  headingFontFamily: sans-serif
+  headingFontFamily: georgia
   logo: /img/blogophonic-mark-dark.png
   mainSections:
     - blog
@@ -49,7 +49,7 @@ params:
     - icon: github
       icon_pack: fab
       url: https://github.com/hugo-apero/apero
-    - icon: facebook-square
+    - icon: youtube
       icon_pack: fab
       url: https://www.facebook.com/hashtag/ap%C3%A9ro
     - icon: instagram
@@ -57,15 +57,17 @@ params:
       url: https://www.instagram.com/explore/tags/apero/
     - icon: twitter
       icon_pack: fab
-      url: https://twitter.com/hashtag/apéro
+    - icon: twitch
+      icon_pack: fab
+      url: https://twitch.com
     - icon: rss
       icon_pack: fas
       url: /blog/index.xml
   socialInFooter: yes
   socialInHeader: no
-  textFontFamily: sans-serif
-  theme: peach
-  twitter: apreshill
+  textFontFamily: georgia
+  theme: plum
+  twitter: bp_acton
   utterances:
     issue_term: pathname
     label: 'comments :crystal_ball:'

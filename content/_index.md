@@ -3,7 +3,7 @@ action_label: Read More &rarr;
 action_link: /about
 action_type: text
 description: My name is Dr. Bryan Acton and I work in the centre for leadership and followership with a set of wonderful colleagues including Robert Lord. I am interested in cutting-edge data analytic approaches for answering questions about our social world. I am particular interested in studying leadership in collectives.  
-image_left: false
+image_left: true
 images:
 - img/user-2.jpg
 show_action_link: true

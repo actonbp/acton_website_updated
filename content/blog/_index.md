@@ -23,7 +23,7 @@ sidebar:
   show_sidebar_adunit: true
   text_link_label: Subscribe via RSS
   text_link_url: /index.xml
-  title: A Sidebar for Your Thoughts
+  title: Bryan Acton's Blog
 title: A Blog That Works
 ---
 
