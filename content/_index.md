@@ -9,7 +9,7 @@ images:
 show_action_link: true
 show_social_links: true
 subtitle: Post-doctoral Research Scholar @ Durham University (UK) Business School
-text_align_left: true
+text_align_left: false
 title: Bryan Acton
 type: home
 ---

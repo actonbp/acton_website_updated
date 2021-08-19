@@ -14,7 +14,7 @@ blogdown::stop_server()
 
 #blogdown::new_post("Tidy_Tuesday_2.21")
 
-setwd("C:/Users/bacto/OneDrive/Desktop/Programming/R/acton_website_updated")
+setwd("C:/Users/bacto/OneDrive/Desktop/Programming/R/acton_website_updated_2")
 
 #blogdown::new_post("test")
 
