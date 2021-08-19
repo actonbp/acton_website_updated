@@ -7,8 +7,6 @@ headline: |
 ---
 
 <!-- this is a subheadline -->
-More about me. 
-
 I'm a postdoctoral research scholar in the [Centre for Leadership & Followership](https://www.dur.ac.uk/business/research/management/leadership-and-followership/about-us/index.php) at the Durham University (UK) Business School. My research has focused on understanding leadership through a complexity perspective. I am a core member of the [The International Network of Identity, Cognition and Leadership Studies](https://www.leadcog.net/).  Learn more about my research interests in [publications](/publication).
 
 

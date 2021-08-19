@@ -1,5 +1,5 @@
 ---
-title: "Deploying xaringan Slides: A Ten-Step GitHub Pages Workflow"
+title: "Bryan's First Post"
 #layout: single
 layout: single-sidebar
 date: '2021-03-16'
@@ -11,9 +11,9 @@ tags:
   - R
   - xaringan
   - git
-subtitle: 'A ten-step workflow for creating an HTML xaringan slide deck and deploying it to the web using GitHub Pages'
-summary: 'A ten-step workflow for creating an HTML xaringan slide deck and deploying it to the web using GitHub Pages'
-lastmod: '2021-03-16'
+subtitle: 'subtitle here'
+summary: 'summary here'
+lastmod: '2021-08-19'
 featured: yes
 draft: no
 image:

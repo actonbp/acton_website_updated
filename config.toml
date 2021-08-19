@@ -39,9 +39,9 @@ pygmentsUseClasses = true  # use class names instead of directly inserting color
   #description = "A modern, beautiful, and easily configurable blog theme for Hugo."
   description = "Personal website of Bryan Acton"
   #favicon = "/img/favicon.ico"
-  favicon = "/img/logo_rounded.ico"
+  favicon = "/img/logo_2.ico"
   #logo = "/img/blogophonic-mark-dark.png"
-  logo = "/img/logo_noBg.svg"
+  logo = "/img/logo_2.png"
   mainSections = ["blog", "talk", "publication", "project"]
   navallcaps = true
   # show/hide social icons in site header & footer

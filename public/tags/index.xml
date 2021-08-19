@@ -2,53 +2,125 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Bryan Acton</title>
-    <link>https://hugo-apero-docs.netlify.app/tags/</link>
+    <link>https://bpacton.com/tags/</link>
     <description>Recent content in Tags on Bryan Acton</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://hugo-apero-docs.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bpacton.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>style</title>
-      <link>https://hugo-apero-docs.netlify.app/tags/style/</link>
-      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      <title>EHR</title>
+      <link>https://bpacton.com/tags/ehr/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://hugo-apero-docs.netlify.app/tags/style/</guid>
+      <guid>https://bpacton.com/tags/ehr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>health disparities</title>
+      <link>https://bpacton.com/tags/health-disparities/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/tags/health-disparities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pregnancy</title>
+      <link>https://bpacton.com/tags/pregnancy/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/tags/pregnancy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://bpacton.com/tags/git/</link>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://bpacton.com/tags/r/</link>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xaringan</title>
+      <link>https://bpacton.com/tags/xaringan/</link>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/tags/xaringan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo-site</title>
-      <link>https://hugo-apero-docs.netlify.app/tags/hugo-site/</link>
-      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      <link>https://bpacton.com/tags/hugo-site/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://hugo-apero-docs.netlify.app/tags/hugo-site/</guid>
+      <guid>https://bpacton.com/tags/hugo-site/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>plot</title>
-      <link>https://hugo-apero-docs.netlify.app/tags/plot/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      <title>AFM</title>
+      <link>https://bpacton.com/tags/afm/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugo-apero-docs.netlify.app/tags/plot/</guid>
+      <guid>https://bpacton.com/tags/afm/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>R Markdown</title>
-      <link>https://hugo-apero-docs.netlify.app/tags/r-markdown/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      <title>BAPN</title>
+      <link>https://bpacton.com/tags/bapn/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugo-apero-docs.netlify.app/tags/r-markdown/</guid>
+      <guid>https://bpacton.com/tags/bapn/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>regression</title>
-      <link>https://hugo-apero-docs.netlify.app/tags/regression/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      <title>crosslinking</title>
+      <link>https://bpacton.com/tags/crosslinking/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://hugo-apero-docs.netlify.app/tags/regression/</guid>
+      <guid>https://bpacton.com/tags/crosslinking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mechanical loading</title>
+      <link>https://bpacton.com/tags/mechanical-loading/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/tags/mechanical-loading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>osteoblasts</title>
+      <link>https://bpacton.com/tags/osteoblasts/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/tags/osteoblasts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Type I collagen</title>
+      <link>https://bpacton.com/tags/type-i-collagen/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/tags/type-i-collagen/</guid>
       <description></description>
     </item>
     
