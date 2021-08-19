@@ -138,9 +138,9 @@ pygmentsUseClasses = true  # use class names instead of directly inserting color
     url = "/blog/"
     weight = 2
   [[menu.header]]
-    name = "Talks"
-    title = "Invited Talks"
-    url = "/talk/"
+    name = "Events"
+    title = "Invited Talks & Events"
+    url = "/events/"
     weight = 3
   [[menu.header]]
     name = "Publications"
@@ -152,16 +152,21 @@ pygmentsUseClasses = true  # use class names instead of directly inserting color
    title = "Project Portfolio"
    url = "/project/"
    weight = 5
+[[menu.header]]
+   name = "CV"
+   title = "See my CV"
+   url = "CV/Acton_CV_4.16.21.html"
+   weight = 6
   #[[menu.header]]
   #  name = "A collection"
   #  title = "A collection"
   #  url = "/collection/"
-  #  weight = 6
+  #  weight = 7
   #[[menu.header]]
   #  name = "Elements"
   #  title = "Element Page"
   #  url = "/elements/"
-  #  weight = 7
+  #  weight = 8
   # Configure footer  
   [[menu.footer]]
     name = "License"
