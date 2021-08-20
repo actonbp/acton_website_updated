@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blogdown on Bryan Acton</title>
+    <link>https://bpacton.com/tags/blogdown/</link>
+    <description>Recent content in blogdown on Bryan Acton</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bpacton.com/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making an ABM for leadership Pt 1</title>
+      <link>https://bpacton.com/blog/intro_abm_series/03-leadership-abm-code-1/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/blog/intro_abm_series/03-leadership-abm-code-1/</guid>
+      <description>window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34; Copy Code&#34;,&#34;success&#34;:&#34; Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl+C to Copy&#34;}).page-main img { box-shadow: 0px 0px 2px 2px rgba( 0, 0, 0, 0.2 ); #/* ease | ease-in | ease-out | linear */ transition: transform ease-in-out 0.6s; } .page-main img:hover { transform: scale(1.4); } .page-main img {box-shadow: 0px 0px 2px 2px rgba( 0, 0, 0, 0.2 );#/* ease | ease-in | ease-out | linear */transition: transform ease-in-out 0.</description>
+    </item>
+    
+    <item>
+      <title>Agent-based models for leadership.</title>
+      <link>https://bpacton.com/blog/intro_abm_series/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/blog/intro_abm_series/</guid>
+      <description>** No content below YAML for the series _index. This file is a leaf bundle, and provides settings for the listing page layout and sidebar content.**</description>
+    </item>
+    
+  </channel>
+</rss>
