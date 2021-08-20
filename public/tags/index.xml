@@ -6,7 +6,43 @@
     <description>Recent content in Tags on Bryan Acton</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 08 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bpacton.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bpacton.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>accessibility</title>
+      <link>https://bpacton.com/tags/accessibility/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/tags/accessibility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blogdown</title>
+      <link>https://bpacton.com/tags/blogdown/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/tags/blogdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://bpacton.com/tags/hugo/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://bpacton.com/tags/r/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/tags/r/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>EHR</title>
       <link>https://bpacton.com/tags/ehr/</link>
@@ -40,15 +76,6 @@
       <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://bpacton.com/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>https://bpacton.com/tags/r/</link>
-      <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://bpacton.com/tags/r/</guid>
       <description></description>
     </item>
     

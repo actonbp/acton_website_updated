@@ -10,7 +10,7 @@ intro: |
   I hope this theme helps you `branch` your own virtual apéro. A place where you and your site's visitors enjoy spending time, and one that helps folks get to know you better. 
 show_outro: true
 outro: |
-  <i class="fas fa-glass-cheers pr2"></i>Sincere thanks to [Maëlle Salmon](https://masalmon.eu/) for her help naming this Hugo theme!
+  <i class="fas fa-glass-cheers pr2"></i>Sincere thanks to [Silvia Canelón](https://silvia.rbind.io/) for her great website ideas and [Alison Hill](https://alison.rbind.io/) for her amazing theme!
 ---
 
 ** index doesn't contain a body, just front matter above.

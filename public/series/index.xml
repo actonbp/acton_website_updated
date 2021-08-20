@@ -5,6 +5,16 @@
     <link>https://bpacton.com/series/</link>
     <description>Recent content in Series on Bryan Acton</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://bpacton.com/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bpacton.com/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ABM for leadership</title>
+      <link>https://bpacton.com/series/abm-for-leadership/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/series/abm-for-leadership/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
