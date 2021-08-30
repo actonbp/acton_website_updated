@@ -44,10 +44,14 @@
     
     
   <meta itemprop="name" content="Making an ABM for leadership Pt 1">
-<meta itemprop="description" content="window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34; Copy Code&#34;,&#34;success&#34;:&#34; Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl&#43;C to Copy&#34;}).page-main img { box-shadow: 0px 0px 2px 2px rgba( 0, 0, 0, 0.2 ); #/* ease | ease-in | ease-out | linear */ transition: transform ease-in-out 0.6s; } .page-main img:hover { transform: scale(1.4); } .page-main img {box-shadow: 0px 0px 2px 2px rgba( 0, 0, 0, 0.2 );#/* ease | ease-in | ease-out | linear */transition: transform ease-in-out 0.">
+<meta itemprop="description" content="window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34; Copy Code&#34;,&#34;success&#34;:&#34; Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl&#43;C to Copy&#34;})Walkthrough of code for simulation 👇Pseudocode Part 1: Agents1. Make team of 5 people
+2. Set the majority race and minority race
+3. Assign badge/no badge randomly to team
+Code:
+to do_make_agentscreate-turtles people [set Racei TRUE set Badge TRUE] ; intialize agentslayout-circle sort turtles 6 ; distribute agents on the world&#39;s surfaceask turtles [ set label who] ;associate each agent with numberset n random 5ask n-of n turtles[set breed majors]ask turtles with [breed !">
 <meta itemprop="datePublished" content="2021-08-20T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-20T00:00:00+00:00" />
-<meta itemprop="wordCount" content="653">
+<meta itemprop="wordCount" content="586">
 <meta itemprop="image" content="https://bpacton.com/blog/intro_abm_series/03-leadership-abm-code-1/featured.jpg">
 
 
@@ -132,26 +136,6 @@
 <script>window.xaringanExtraClipboard(null, {"button":"<i class=\"fa fa-clipboard\"><\/i> Copy Code","success":"<i class=\"fa fa-check\" style=\"color: #90BE6D\"><\/i> Copied!","error":"Press Ctrl+C to Copy"})</script>
 <link href="https://bpacton.com/blog/intro_abm_series/03-leadership-abm-code-1/index_files/font-awesome/css/all.css" rel="stylesheet" />
 <link href="https://bpacton.com/blog/intro_abm_series/03-leadership-abm-code-1/index_files/font-awesome/css/v4-shims.css" rel="stylesheet" />
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">page-main</span> <span class="nt">img</span> <span class="p">{</span>
-  <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span> <span class="mi">0</span><span class="kt">px</span> <span class="mi">2</span><span class="kt">px</span> <span class="mi">2</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.2</span> <span class="p">);</span>
-  <span class="err">#</span><span class="c">/* ease | ease-in | ease-out | linear */</span>
-  <span class="k">transition</span><span class="p">:</span> <span class="k">transform</span> <span class="kc">ease</span><span class="o">-</span><span class="n">in-out</span> <span class="mf">0.6</span><span class="kt">s</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="p">.</span><span class="nc">page-main</span> <span class="nt">img</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
-  <span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mf">1.4</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div><style type="text/css">
-.page-main img {
-  box-shadow: 0px 0px 2px 2px rgba( 0, 0, 0, 0.2 );
-  #/* ease | ease-in | ease-out | linear */
-  transition: transform ease-in-out 0.6s;
-}
-
-.page-main img:hover {
-  transform: scale(1.4);
-}
-</style>
 
 
 
@@ -172,8 +156,8 @@
 <p><strong>1. Make team of 5 people</strong></p>
 <p><strong>2. Set the majority race and minority race</strong></p>
 <p><strong>3. Assign badge/no badge randomly to team</strong></p>
-<p><strong>Code:</strong></p>
-<pre><code>to do_make_agents
+<p><span style="background-color: #FFFF00"><strong>Code:</strong></span></p>
+<pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">to do_make_agents
   create-turtles people [set Racei TRUE set Badge TRUE] ; intialize agents
   layout-circle sort turtles 6 ; distribute agents on the world's surface
   ask turtles [ set label who] ;associate each agent with number
@@ -207,8 +191,8 @@ end
 <blockquote>
 <p>If they do not have a badge, then more racial similarity leads to to less likelihood of encouragement</p>
 </blockquote>
-<p><strong>Code:</strong></p>
-<pre><code>  set cutoff1 random-float 100
+<p><span style="background-color: #FFFF00"><strong>Code:</strong></span></p>
+<pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">  set cutoff1 random-float 100
   ifelse Badge = TRUE
       [
     ifelse (race_sim * 100) &gt; cutoff1
@@ -228,8 +212,8 @@ end
 <blockquote>
 <p>If they do not have a badge, then more racial similarity leads to to less likelihood of decision to perform ITWB</p>
 </blockquote>
-<p><strong>Code:</strong></p>
-<pre><code>  set cutoff1 random-float 100
+<p><span style="background-color: #FFFF00"><strong>Code:</strong></span></p>
+<pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">  set cutoff1 random-float 100
   ifelse Badge = TRUE
       [
     ifelse (race_sim * 100) &gt; cutoff1
@@ -242,8 +226,8 @@ end
     [set Decidei 50]
       ]
 </code></pre><p><strong>6. Each agent performs ITWB based on previous decision as well as encouragement from the group and validation from the group the prior time point</strong></p>
-<p><strong>Code:</strong></p>
-<pre><code>set cutoff3 random-float 150
+<p><span style="background-color: #FFFF00"><strong>Code:</strong></span></p>
+<pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">set cutoff3 random-float 150
     set encour_sum count turtles with [Encouragei = 1]
     set valid_sum count turtles with [Validatei = 1]
     ifelse (encour_sum + valid_sum * 10) + Decidei &gt; cutoff3
@@ -256,8 +240,8 @@ end
 <blockquote>
 <p>If they do not have a badge, then more racial similarity leads to to less likelihood of validation</p>
 </blockquote>
-<p><strong>Code:</strong></p>
-<pre><code>  set cutoff1 random-float 100
+<p><span style="background-color: #FFFF00"><strong>Code:</strong></span></p>
+<pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">  set cutoff1 random-float 100
   ifelse Badge = TRUE
       [
      ifelse (race_sim * 100) &gt; cutoff1
@@ -283,8 +267,8 @@ end
 <blockquote>
 <p>For agent<em>i</em>, if agent<em>k</em>&rsquo;s performed ITWB is congruent with their ILT, then they will add 1 to their leadership perception score (do this for all agents)</p>
 </blockquote>
-<p><strong>Code:</strong></p>
-<pre><code>ask person_1[
+<p><span style="background-color: #FFFF00"><strong>Code:</strong></span></p>
+<pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">ask person_1[
         create-LP-from person_2
         [
          set weight 0
@@ -312,7 +296,8 @@ ask LPS with [end1 = person_1 and end2 = person_2]; this is a tie with int 2 as 
     ]
     ]
 </code></pre><p><strong>9. Calculate leadership score for each agent</strong></p>
-<pre><code>to calculate_leader_score
+<p><span style="background-color: #FFFF00"><strong>Code:</strong></span></p>
+<pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">to calculate_leader_score
 ask turtles[
     set leadership_score mean [weight] of my-in-LPS; calculates the mean of all the perceptions of others
 ]
@@ -323,6 +308,9 @@ end
       <footer class="post-footer">
         <div class="post-pagination dt w-100 mt4 mb2">
   
+  
+    <a class="next dtc pl2 tr v-top fw6"
+    href="https://bpacton.com/blog/intro_abm_series/copyof03-leadership-abm-code-1/">Making an ABM for leadership Pt 1 &rarr;</a>
   
 </div>
 
@@ -380,6 +368,9 @@ end
         
           
           <li class="active" hugo-nav="/blog/intro_abm_series/03-leadership-abm-code-1/"><a href="https://bpacton.com/blog/intro_abm_series/03-leadership-abm-code-1/">Making an ABM for leadership Pt 1</a></li>
+        
+          
+          <li class="" hugo-nav="/blog/intro_abm_series/copyof03-leadership-abm-code-1/"><a href="https://bpacton.com/blog/intro_abm_series/copyof03-leadership-abm-code-1/">Making an ABM for leadership Pt 1</a></li>
         
         </ul>
       </nav>
