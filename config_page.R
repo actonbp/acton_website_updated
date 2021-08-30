@@ -22,7 +22,7 @@ setwd("C:/Users/bacto/OneDrive/Desktop/Programming/R/acton_website_updated_2")
 .libPaths("C:/Users/bacto/R/library")
 #the above is a test
 
-credentials::set_github_pat("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")
+credentials::set_github_pat()
 
 usethis::git_sitrep()
 ####INFO on PREVIEW:
