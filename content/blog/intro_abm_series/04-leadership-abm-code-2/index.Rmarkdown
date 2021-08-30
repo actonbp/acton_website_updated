@@ -1,24 +1,33 @@
 ---
-title: "Making an ABM for leadership Pt 1"
+title: "Making an ABM for leadership Pt 2"
 weight: 1
-subtitle: "Walkthrough of my code for building ABM for leadership"
-excerpt: "Let's walkthrough an example of building an ABM for leadership"
-date: 2021-08-20
-lastmod: 2021-08-20
+subtitle: "Walkthrough of my code for adding thin slices rule"
+excerpt: "Here is where we add a rule about thin slices of behavior "
+date: 2021-08-30
+lastmod: 2021-08-30
 draft: true
 alt: "Test for alt text in archetype"
 author: Bryan Acton
 ---
-<script src="{{< blogdown/postref >}}index_files/clipboard/clipboard.min.js"></script>
-<link href="{{< blogdown/postref >}}index_files/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
-<script>window.xaringanExtraClipboard(null, {"button":"<i class=\"fa fa-clipboard\"><\/i> Copy Code","success":"<i class=\"fa fa-check\" style=\"color: #90BE6D\"><\/i> Copied!","error":"Press Ctrl+C to Copy"})</script>
-<link href="{{< blogdown/postref >}}index_files/font-awesome/css/all.css" rel="stylesheet" />
-<link href="{{< blogdown/postref >}}index_files/font-awesome/css/v4-shims.css" rel="stylesheet" />
 
+```{r setup, echo=FALSE}
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i> Copy Code",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i> Copied!",
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
 
+library(xaringanExtra)
 
-# Walkthrough of code for simulation 👇
+knitr::knit_engines$set(netlogo = function(options) {
+  # the source code is in options$code; just do
+  # whatever you want with it
+})
+```
+
+# Walkthrough of code for simulation `r emo::ji("point_down")`
 
 ## Pseudocode Part 1: Agents 
 
