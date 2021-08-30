@@ -22,6 +22,8 @@ setwd("C:/Users/bacto/OneDrive/Desktop/Programming/R/acton_website_updated_2")
 .libPaths("C:/Users/bacto/R/library")
 #the above is a test
 
+usethis::create_github_token() 
+
 credentials::set_github_pat()
 
 usethis::git_sitrep()
