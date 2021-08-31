@@ -29,6 +29,9 @@ author: Bryan Acton
 
 **3. Assign badge/no badge randomly to team**
 
+
+<span style="background-color: #1aece9">**What is different? Agent's now also have a variable *Interpersonal teamwork behavior difference***</span>
+
 <span style="background-color: #FFFF00">**Code:**</span>
 ```{eval=FALSE}
 to do_make_agents
@@ -51,7 +54,10 @@ end
 ```
 
 ## Pseudocode Part 2: Interpersonal Teamwork Behavior 
+
 **4. Each agents decides whether to encourage others** 
+
+
 > If they have a badge, then more racial similarity leads to more likelihood of encouragement 
 
 > If they do not have a badge, then more racial similarity leads to to less likelihood of encouragement 

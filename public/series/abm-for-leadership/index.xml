@@ -16,6 +16,7 @@
       <description>window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34; Copy Code&#34;,&#34;success&#34;:&#34; Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl+C to Copy&#34;})Walkthrough of code for simulation 👇Pseudocode Part 1: Agents1. Make team of 5 people
 2. Set the majority race and minority race
 3. Assign badge/no badge randomly to team
+What is different? Agent&amp;rsquo;s now also have a variable Interpersonal teamwork behavior difference
 Code:
 to do_make_agentscreate-turtles people [set Racei TRUE set Badge TRUE] ; intialize agentslayout-circle sort turtles 6 ; distribute agents on the world&#39;s surfaceask turtles [ set label who] ;associate each agent with numberset n random 5ask n-of n turtles[set breed majors]ask turtles with [breed !</description>
     </item>

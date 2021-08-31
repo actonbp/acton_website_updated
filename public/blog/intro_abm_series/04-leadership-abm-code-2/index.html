@@ -47,11 +47,12 @@
 <meta itemprop="description" content="window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34; Copy Code&#34;,&#34;success&#34;:&#34; Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl&#43;C to Copy&#34;})Walkthrough of code for simulation 👇Pseudocode Part 1: Agents1. Make team of 5 people
 2. Set the majority race and minority race
 3. Assign badge/no badge randomly to team
+What is different? Agent&rsquo;s now also have a variable Interpersonal teamwork behavior difference
 Code:
 to do_make_agentscreate-turtles people [set Racei TRUE set Badge TRUE] ; intialize agentslayout-circle sort turtles 6 ; distribute agents on the world&#39;s surfaceask turtles [ set label who] ;associate each agent with numberset n random 5ask n-of n turtles[set breed majors]ask turtles with [breed !">
 <meta itemprop="datePublished" content="2021-08-30T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-30T00:00:00+00:00" />
-<meta itemprop="wordCount" content="586">
+<meta itemprop="wordCount" content="599">
 <meta itemprop="image" content="https://bpacton.com/blog/intro_abm_series/04-leadership-abm-code-2/featured.jpg">
 
 
@@ -156,6 +157,7 @@ to do_make_agentscreate-turtles people [set Racei TRUE set Badge TRUE] ; intial
 <p><strong>1. Make team of 5 people</strong></p>
 <p><strong>2. Set the majority race and minority race</strong></p>
 <p><strong>3. Assign badge/no badge randomly to team</strong></p>
+<p><span style="background-color: #1aece9"><strong>What is different? Agent&rsquo;s now also have a variable <em>Interpersonal teamwork behavior difference</em></strong></span></p>
 <p><span style="background-color: #FFFF00"><strong>Code:</strong></span></p>
 <pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">to do_make_agents
   create-turtles people [set Racei TRUE set Badge TRUE] ; intialize agents
