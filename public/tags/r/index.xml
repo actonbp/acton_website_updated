@@ -46,7 +46,7 @@ to do_make_agentscreate-turtles people [set Racei TRUE set Badge TRUE] ; intial
       <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://bpacton.com/blog/deploying-xaringan-slides/</guid>
-      <description>summary here</description>
+      <description>A ten-step workflow for creating an HTML xaringan slide deck and deploying it to the web using GitHub Pages</description>
     </item>
     
   </channel>

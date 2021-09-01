@@ -24,12 +24,12 @@
   
     
   
-<meta name="description" content="subtitle here">
+<meta name="description" content="A ten-step workflow for creating an HTML xaringan slide deck and deploying it to the web using GitHub Pages">
 
 
 <meta property="og:site_name" content="Bryan Acton">
 <meta property="og:title" content="Bryan&#39;s First Post | Bryan Acton">
-<meta property="og:description" content="subtitle here" />
+<meta property="og:description" content="A ten-step workflow for creating an HTML xaringan slide deck and deploying it to the web using GitHub Pages" />
 <meta property="og:type" content="page" />
 <meta property="og:url" content="https://bpacton.com/blog/deploying-xaringan-slides/" />
 <meta property="og:locale" content="en">
@@ -44,10 +44,10 @@
     
     
   <meta itemprop="name" content="Bryan&#39;s First Post">
-<meta itemprop="description" content="summary here">
+<meta itemprop="description" content="A ten-step workflow for creating an HTML xaringan slide deck and deploying it to the web using GitHub Pages">
 <meta itemprop="datePublished" content="2021-03-16T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-08-19T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1167">
+<meta itemprop="dateModified" content="2021-03-16T00:00:00+00:00" />
+<meta itemprop="wordCount" content="329">
 <meta itemprop="image" content="https://bpacton.com/blog/deploying-xaringan-slides/featured.jpg">
 
 
@@ -122,7 +122,7 @@
     <article class="post-content pa0 pr3-l">
       <header class="post-header">
         <h1 class="f1 lh-solid measure-narrow mb3 fw4">Bryan&#39;s First Post</h1>
-        <h2 class="f4 mt0 mb4 lh-title measure">subtitle here</h2>
+        <h2 class="f4 mt0 mb4 lh-title measure">A ten-step workflow for creating an HTML xaringan slide deck and deploying it to the web using GitHub Pages</h2>
         <p class="f6 measure lh-copy mv1">By Bryan Acton in <a href="https://bpacton.com/categories/r">R</a>  <a href="https://bpacton.com/categories/tutorial">Tutorial</a> </p>
         <p class="f7 db mv0 ttu">March 16, 2021</p>
       
@@ -178,44 +178,19 @@
 <script>window.xaringanExtraClipboard(null, {"button":"<i class=\"fa fa-clipboard\"><\/i> Copy Code","success":"<i class=\"fa fa-check\" style=\"color: #90BE6D\"><\/i> Copied!","error":"Press Ctrl+C to Copy"})</script>
 <link href="https://bpacton.com/blog/deploying-xaringan-slides/index_files/font-awesome/css/all.css" rel="stylesheet" />
 <link href="https://bpacton.com/blog/deploying-xaringan-slides/index_files/font-awesome/css/v4-shims.css" rel="stylesheet" />
-<script src="https://bpacton.com/blog/deploying-xaringan-slides/index_files/fitvids/fitvids.min.js"></script>
-<p><strong>Note:</strong> This workflow is not exclusive to xaringan slides! Try it out with any other HTML file.</p>
-
-
-
-
-<h1 id="choose-your-own-adventure">Choose your own adventure
-  <a href="#choose-your-own-adventure" title="Link to heading"></a>
-</h1>
-<ul>
-<li><strong>Option 1:</strong> Keep reading to make a xaringan slide deck from scratch!</li>
-<li><strong>Option 2:</strong> Start with an R-Ladies themed xaringan template (see below)</li>
-</ul>
-<p>I made an 
-<a href="https://spcanelon.github.io/RLadies-xaringan-template" target="_blank" rel="noopener">R-Ladies themed xaringan template</a> to use as a teaching tool and you are welcome to use/modify it to suit your needs! You can download the files to your machine 👇 and then skip down to 
-<a href="#initialize-version-control-with-git">Initialize version control with git</a></p>
-<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="n">usethis</span><span class="o">::</span><span class="nf">use_course</span><span class="p">(</span>
-  <span class="n">repo_spec</span> <span class="o">=</span> <span class="s">&#34;spcanelon/RLadies-xaringan-template&#34;</span><span class="p">,</span>
-  <span class="n">destdir</span> <span class="o">=</span> <span class="s">&#34;filepath/for/your/presentation&#34;</span>
-  <span class="p">)</span>
-</code></pre></div><blockquote>
-<p>Note: After copying the files to your machine you’ll probably want to rename the file folder to whatever makes sense for your presentation.</p>
-</blockquote>
-<div class="shareagain" style="min-width:300px;margin:1em auto;">
-<iframe src="https://spcanelon.github.io/RLadies-xaringan-template" width="400" height="300" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
-<script>fitvids('.shareagain', {players: 'iframe'});</script>
-</div>
+<p><strong>Note:</strong> This blog is a work in progress!</p>
 <blockquote>
-<p>Try navigating through the slides ☝️ with your left/right arrow keys and press the letter “P” on your keyboard to see some notes in Presenter View</p>
+<p>Check out my powerpoint slides above! ☝️ with your left/right arrow keys and press the letter &ldquo;P&rdquo; on your keyboard to see some notes in Presenter View</p>
 </blockquote>
 
 
 
 
-<h1 id="the-ten-step-workflow">The Ten-Step Workflow
-  <a href="#the-ten-step-workflow" title="Link to heading"></a>
+<h1 id="trust-the-process">Trust the process
+  <a href="#trust-the-process" title="Link to heading"></a>
 </h1>
-<p>This workflow assumes you have already connected RStudio to Git and GitHub.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>This workflow assumes you have already looked around my website.^[
+<a href="www.google.com">Cool link here</a>]</p>
 
 
 
@@ -253,163 +228,39 @@
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="nf">install.packages</span><span class="p">(</span><span class="s">&#34;xaringan&#34;</span><span class="p">)</span>
-<span class="nf">install.packages</span><span class="p">(</span><span class="s">&#34;usethis&#34;</span><span class="p">)</span>
-</code></pre></div>
-
-
-
-<h2 id="creating-your-xaringan-slide-deck">Creating your xaringan slide deck
-  <a href="#creating-your-xaringan-slide-deck" title="Link to heading"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="currentColor"></path>
-      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
-    </svg></a>
-</h2>
-<p><strong>1. Create a new RStudio project for your presentation:</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="n">usethis</span><span class="o">::</span><span class="nf">create_project</span><span class="p">(</span><span class="s">&#34;filepath/for/your/presentation/repo-name&#34;</span><span class="p">)</span>
-</code></pre></div><blockquote>
-<p>📍 If you’re not sure where you are on your computer, check your working directory with <code>getwd()</code> and use it as a filepath reference point</p>
-</blockquote>
-<!--Output:    
-    
-    ```r
-    New project 'rladies-xaringan-template' is nested inside an existing project '/filepath/for/the/presentation/', which is rarely a good idea.
-    If this is unexpected, the here package has a function, `here::dr_here()` that reveals why '/filepath/for/the/presentation/' is regarded as a project.
-    Do you want to create anyway?
-    
-    1: Absolutely not
-    2: Yup
-    3: No
-    
-    Selection: 2
-    ```
--->
-<p><strong>2. Create a xaringan deck using a xaringan template:</strong><br>
-<em>File</em> &gt; <em>New File</em> &gt; <em>R Markdown</em> &gt; <em>From Template</em> &gt; <em>Ninja Presentation</em> &gt; <em>OK</em></p>
-<p><strong>3. Delete what you don’t need and save your R Markdown file with whatever name you like.</strong> If you pick <code>index.Rmd</code> the live link you share at the end will be relatively short.</p>
-<p><strong>4. Render HTML slides from the open Rmd file using xaringan’s infinite moon reader:</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r">  <span class="n">xaringan</span><span class="o">::</span><span class="nf">infinite_moon_reader</span><span class="p">()</span>
-</code></pre></div>
-
-
-
-<h2 id="initialize-version-control-with-git">Initialize version control with git
-  <a href="#initialize-version-control-with-git" title="Link to heading"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="currentColor"></path>
-      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
-    </svg></a>
-</h2>
-<p><strong>5. Initialize version control of your slides with git:</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="n">usethis</span><span class="o">::</span><span class="nf">use_git</span><span class="p">()</span>
-</code></pre></div><p>You’ll be asked if you want to commit the files in your project (with the message “Initial commit”) and then if you want to restart to activate the Git pane. Say yes to both ✅</p>
-<blockquote>
-<p>Note: At the moment {usethis} names the primary branch “master” by default. 
-<a href="https://github.com/r-lib/usethis/issues/1341" target="_blank" rel="noopener">Issue #1341</a> suggests the option to instead name it “main” is in the works.</p>
-</blockquote>
-<!--Output:
-> usethis::use_git()
-✓ Setting active project to '/filepath/for/the/presentation/rladies-xaringan-template'
-✓ Initialising Git repo
-✓ Adding '.Rhistory', '.Rdata', '.httr-oauth', '.DS_Store' to '.gitignore'
-There are 6 uncommitted files:
-* '.gitignore'
-* 'index_files/'
-* 'index.html'
-* 'index.Rmd'
-* 'libs/'
-* 'rladies-xaringan-template.Rproj'
-Is it ok to commit them?
-
-1: Yup
-2: Negative
-3: No way
-
-Selection: 1
-
-
-✓ Adding files
-✓ Making a commit with message 'Initial commit'
-● A restart of RStudio is required to activate the Git pane
-Restart now?
-
-1: Yes
-2: Nope
-3: Not now
-
-Selection: 
-
--->
-<p><strong>6. Connect your local project with a GitHub repo:</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="n">usethis</span><span class="o">::</span><span class="nf">use_github</span><span class="p">()</span>
 </code></pre></div><blockquote>
-<p>You could use the function argument <code>private = TRUE</code> to create a private GitHub repository. But you may have to remember to change the visibility before 
-<a href="#deploying-your-slides">deploying to GitHub Pages</a>.</p>
+<p>Look, I can link to another section in this page! [deploying to GitHub Pages](#Next section here ).</p>
 </blockquote>
-<!--Output:
-> usethis::use_github(private = TRUE)
-ℹ Defaulting to https Git protocol
-✓ Setting active project to '/filepath/for/the/presentation/rladies-xaringan-template'
-✓ Checking that current branch is default branch ('master')
-✓ Creating private GitHub repository 'spcanelon/rladies-xaringan-template'
-✓ Setting remote 'origin' to 'https://github.com/spcanelon/rladies-xaringan-template.git'
-✓ Pushing 'master' branch to GitHub and setting 'origin/master' as upstream branch
-✓ Opening URL 'https://github.com/spcanelon/rladies-xaringan-template'
--->
-<p><strong>7. Your new GitHub repo with all of your xaringan project files will automatically open up in your browser</strong></p>
-<blockquote>
-<p>Repo for the R-Ladies xaringan template:<br>
-<a href="https://github.com/spcanelon/RLadies-xaringan-template">https://github.com/spcanelon/RLadies-xaringan-template</a></p>
-</blockquote>
-
-
-
-
-<h2 id="making-and-committing-changes-to-your-slides">Making and committing changes to your slides
-  <a href="#making-and-committing-changes-to-your-slides" title="Link to heading"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="currentColor"></path>
-      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
-    </svg></a>
-</h2>
-<p><strong>8. Edit your slides as you wish.</strong> Commit often! And then push to GitHub. Use the tools provided by the Git pane in RStudio, or use the following commands in the Terminal:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Step 1: Stage all modified files</span>
-git add .
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Step 2: Describe the changes you made to your files</span>
-git commit -m <span class="s2">&#34;&lt;A brief but descriptive commit message&gt;&#34;</span>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="c1"># Step 1: Have fun with R!</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Step 2: This could be some bash code</span>
 </code></pre></div><blockquote>
-<p>Consider writing a commit message that finishes the following sentence:<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> “If applied, this commit will…” (e.g. “Change the slide theme,” “Add hello slide”)</p>
+<p>Consider writing a commit message that finishes the following sentence:^[
+<a href="https://chris.beams.io/posts/git-commit/#imperative" target="_blank" rel="noopener">How to Write a Git Commit Message | Chris Beams</a>] &ldquo;If applied, this commit will&hellip;&rdquo; (e.g. &ldquo;Change the slide theme&rdquo;, &ldquo;Add hello slide&rdquo;)</p>
 </blockquote>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Step 3: Push the changes to your GitHub repository</span>
-git push
+<span class="c1">#This could be some more bash code!</span>
 </code></pre></div>
 
 
 
-<h2 id="deploying-your-slides">Deploying your slides
-  <a href="#deploying-your-slides" title="Link to heading"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<h2 id="next-section-here">Next section here
+  <a href="#next-section-here" title="Link to heading"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="currentColor"></path>
       <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
     </svg></a>
 </h2>
-<p><strong>9. When you’re ready to deploy your slides, you can use the <code>usethis::use_github_pages()</code> function</strong> which makes the process of deploying via GitHub Pages super easy. I recommend pointing <code>branch</code> to the name of your primary branch.</p>
-<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="n">usethis</span><span class="o">::</span><span class="nf">use_github_pages</span><span class="p">(</span><span class="n">branch</span> <span class="o">=</span> <span class="s">&#34;master&#34;</span><span class="p">)</span>
+<p><strong>9. Important directions here!</strong> make sure you see this cool <code>in line coloring</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="c1">#You can put R code here!</span>
 </code></pre></div><blockquote>
-<p>Note: Your repository must be <strong>public</strong> for your deployed slides to be available publicly, unless you have a paid GitHub account.</p>
+<p>Note: This text is <strong>Bold</strong>!</p>
 </blockquote>
 <blockquote>
-<p>Also, you only need to follow this step <em>once</em> to deploy your slides to the web. As long as you remember to push to your repo any changes that you make to your slides (Rmd and HTML), GitHub Pages will know how to render them.</p>
+<p>Don&rsquo;t miss this inline note with <em>italics</em></p>
 </blockquote>
-<!--Output:
-> usethis::use_github_pages(branch = "master")
-✓ Setting active project to '/Users/scanelon/Box/2-Teaching/R-Projects/R-Ladies/RLadies-xaringan-template'
-✓ Activating GitHub Pages for 'spcanelon/rladies-xaringan-template'
-✓ GitHub Pages is publishing from:
-● URL: 'https://spcanelon.github.io/RLadies-xaringan-template/'
-● Branch: 'master'
-● Path: '/'
--->
-<p><strong>10. Visit the link provided to see your newly deployed slides!</strong> 🚀<br>Don’t panic if you don’t see them right away, sometimes it takes a little time. This is the link you will share with the world when you present. Notice it looks <em>very</em> similar to your GitHub repo link.</p>
+<p><strong>10. This is important!</strong> 🚀<br> <em>very</em> cool emojis.</p>
 <blockquote>
-<p>Link to the R-Ladies xaringan template rendered slides:<br>
+<p>Check this out:<br>
 <a href="https://spcanelon.github.io/RLadies-xaringan-template">https://spcanelon.github.io/RLadies-xaringan-template</a></p>
 </blockquote>
 
@@ -419,11 +270,8 @@ git push
 <h1 id="bonus-steps">Bonus steps
   <a href="#bonus-steps" title="Link to heading"></a>
 </h1>
-<p>11. Go to the 
-<a href="https://github.com/spcanelon/RLadies-xaringan-template" target="_blank" rel="noopener">repository home page</a> and find the About section on the right hand side. Add a description of your presentation and the link to your slides, that way your presentation is easily available to anyone visiting your repo.</p>
-<p>12. Check out Garrick Aden-Buie’s blog post Sharing Your xaringan Slides to learn how to 
-<a href="https://www.garrickadenbuie.com/blog/sharing-xaringan-slides/#create-a-social-media-card" target="_blank" rel="noopener">create a social media card</a> for your slides and use your new link to share your slides in more places (e.g. 
-<a href="https://www.garrickadenbuie.com/blog/sharing-xaringan-slides/#embed-your-slides" target="_blank" rel="noopener">embedded on a website</a>, etc.)</p>
+<p>11. Go to Link</p>
+<p>12. Check out this Link</p>
 
 
 
@@ -435,77 +283,42 @@ git push
 
 
 
-<h2 id="foundation">Foundation
-  <a href="#foundation" title="Link to heading"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<h2 id="links">Links
+  <a href="#links" title="Link to heading"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="currentColor"></path>
       <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
     </svg></a>
 </h2>
 <ul>
 <li>
-<a href="https://spcanelon.github.io/xaringan-basics-and-beyond/index.html" target="_blank" rel="noopener">Sharing Your Work with xaringan • Silvia Canelón</a> – workshop site</li>
+<a href="https://www.garrickadenbuie.com/blog/sharing-xaringan-slides/" target="_blank" rel="noopener">Sharing Your xaringan Slides • Garrick Aden‑Buie</a> &ndash; blog post</li>
 <li>
-<a href="https://silvia.rbind.io/talk/2020-12-17-introduccion-xaringan/" target="_blank" rel="noopener">Introducción al Paquete xaringan • Silvia Canelón</a> – R-Ladies Meetup</li>
+<a href="https://jhelvy.github.io/xaringanBuilder/" target="_blank" rel="noopener">Functions For Building Xaringan Slides To Different Outputs. • xaringanBuilder</a> &ndash; package site</li>
 <li>
-<a href="https://arm.rbind.io/slides/xaringan.html" target="_blank" rel="noopener">Making Slides with R Markdown • Alison Hill</a> – workshop slides</li>
-<li>
-<a href="https://slides.yihui.org/xaringan/" target="_blank" rel="noopener">Presentation Ninja • xaringan Official Document</a> – package documentation</li>
-<li>
-<a href="https://bookdown.org/yihui/rmarkdown/xaringan.html" target="_blank" rel="noopener">Chapter 7 xaringan Presentations • R Markdown: The Definitive Guide</a> – book chapter</li>
+<a href="https://alison.rbind.io/talk/2020-sharing-short-notice/" target="_blank" rel="noopener">Sharing on Short Notice • Alison Hill &amp; Desirée De Leon</a> &ndash; video resource for deploying via Netlify</li>
 </ul>
 
 
 
 
-<h2 id="sharing-your-slides">Sharing your slides
-  <a href="#sharing-your-slides" title="Link to heading"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<h2 id="more-links">More Links
+  <a href="#more-links" title="Link to heading"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="currentColor"></path>
       <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
     </svg></a>
 </h2>
 <ul>
 <li>
-<a href="https://www.garrickadenbuie.com/blog/sharing-xaringan-slides/" target="_blank" rel="noopener">Sharing Your xaringan Slides • Garrick Aden‑Buie</a> – blog post</li>
+<a href="https://github.com/yihui/xaringan/wiki" target="_blank" rel="noopener">Home · yihui/xaringan Wiki • GitHub</a> &ndash; wiki of customizations for xaringan</li>
 <li>
-<a href="https://jhelvy.github.io/xaringanBuilder/" target="_blank" rel="noopener">Functions For Building Xaringan Slides To Different Outputs. • xaringanBuilder</a> – package site</li>
+<a href="https://www.garrickadenbuie.com/talk/extra-great-slides-nyhackr/" target="_blank" rel="noopener">Making Extra Great Slides • Garrick Aden‑Buie</a> &ndash; talk &amp; slides with xaringan overview and featuring CSS styling and xaringanthemer</li>
 <li>
-<a href="https://alison.rbind.io/talk/2020-sharing-short-notice/" target="_blank" rel="noopener">Sharing on Short Notice • Alison Hill &amp; Desirée De Leon</a> – video resource for deploying via Netlify</li>
+<a href="https://www.katiejolly.io/blog/2021-03-16/designing-slides" target="_blank" rel="noopener">Applying design guidelines to slides with {xaringanthemer} • katie jolly</a> &ndash; blog post</li>
+<li>
+<a href="https://pkg.garrickadenbuie.com/xaringanExtra/#/?id=xaringanextra" target="_blank" rel="noopener">A playground of extensions for xaringan • xaringanExtra</a> &ndash; package site</li>
+<li>
+<a href="https://pkg.garrickadenbuie.com/xaringanthemer/" target="_blank" rel="noopener">Custom xaringan CSS Themes • xaringanthemer</a> &ndash; package site</li>
 </ul>
-
-
-
-
-<h2 id="making-your-slides-extra-special">Making your slides extra special
-  <a href="#making-your-slides-extra-special" title="Link to heading"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="currentColor"></path>
-      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
-    </svg></a>
-</h2>
-<ul>
-<li>
-<a href="https://github.com/yihui/xaringan/wiki" target="_blank" rel="noopener">Home · yihui/xaringan Wiki • GitHub</a> – wiki of customizations for xaringan</li>
-<li>
-<a href="https://www.garrickadenbuie.com/talk/extra-great-slides-nyhackr/" target="_blank" rel="noopener">Making Extra Great Slides • Garrick Aden‑Buie</a> – talk &amp; slides with xaringan overview and featuring CSS styling and xaringanthemer</li>
-<li>
-<a href="https://www.katiejolly.io/blog/2021-03-16/designing-slides" target="_blank" rel="noopener">Applying design guidelines to slides with {xaringanthemer} • katie jolly</a> – blog post</li>
-<li>
-<a href="https://pkg.garrickadenbuie.com/xaringanExtra/#/?id=xaringanextra" target="_blank" rel="noopener">A playground of extensions for xaringan • xaringanExtra</a> – package site</li>
-<li>
-<a href="https://pkg.garrickadenbuie.com/xaringanthemer/" target="_blank" rel="noopener">Custom xaringan CSS Themes • xaringanthemer</a> – package site</li>
-</ul>
-<section class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1" role="doc-endnote">
-<p>
-<a href="https://happygitwithr.com/rstudio-git-github.html" target="_blank" rel="noopener">Chapter 12 Connect RStudio to Git and GitHub | Happy Git and GitHub for the useR</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2" role="doc-endnote">
-<p>
-<a href="https://chris.beams.io/posts/git-commit/#imperative" target="_blank" rel="noopener">How to Write a Git Commit Message | Chris Beams</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</section>
 
       </section>
       <footer class="post-footer">
@@ -579,7 +392,7 @@ git push
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">6 minute read, 1167 words</dd>
+    <dd class="fw5 ml0">2 minute read, 329 words</dd>
   </dl>
   
   <dl class="f6 lh-copy">
@@ -614,22 +427,17 @@ git push
   <h2 class="mv0 f5 fw7 ttu tracked dib">On this page</h2>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#choose-your-own-adventure">Choose your own adventure</a></li>
-    <li><a href="#the-ten-step-workflow">The Ten-Step Workflow</a>
+    <li><a href="#trust-the-process">Trust the process</a>
       <ul>
         <li><a href="#packages">Packages</a></li>
-        <li><a href="#creating-your-xaringan-slide-deck">Creating your xaringan slide deck</a></li>
-        <li><a href="#initialize-version-control-with-git">Initialize version control with git</a></li>
-        <li><a href="#making-and-committing-changes-to-your-slides">Making and committing changes to your slides</a></li>
-        <li><a href="#deploying-your-slides">Deploying your slides</a></li>
+        <li><a href="#next-section-here">Next section here</a></li>
       </ul>
     </li>
     <li><a href="#bonus-steps">Bonus steps</a></li>
     <li><a href="#learn-more">Learn more</a>
       <ul>
-        <li><a href="#foundation">Foundation</a></li>
-        <li><a href="#sharing-your-slides">Sharing your slides</a></li>
-        <li><a href="#making-your-slides-extra-special">Making your slides extra special</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#more-links">More Links</a></li>
       </ul>
     </li>
   </ul>
