@@ -1,7 +1,6 @@
 baseURL = "https://bpactontest.netlify.app/"
 theme = "hugo-apero"
 languageCode = "en"
-#title = "Hugo Apéro"
 title = "Bryan Acton"
 author = "Bryan Acton"
 copyright = "" # set to override the auto generated copyright using org info and now year
@@ -21,14 +20,13 @@ enableEmoji = true
     unsafe = true  # Enable user to embed HTML snippets in Markdown content.
     hardwraps = false 
   [markup.tableOfContents]
-    startLevel = 1
+    startLevel = 2
     endLevel = 2
     ordered = false
   [markup.highlight]
     # one of: https://xyproto.github.io/splash/docs/ 
-    #style = "arduino" # "arduino" "github"
-    noClasses = false
-    
+    style = "github"
+
 # Syntax highlighting
 pygmentsUseClasses = true  # use class names instead of directly inserting color codes
 #pygmentsCodeFences = true  # enable GitHub style code snippets
@@ -83,7 +81,7 @@ pygmentsUseClasses = true  # use class names instead of directly inserting color
   # Configuration of https://utteranc.es/ for comments
   [params.utterances]
     use_utterances = true
-    repo_name = "actonbp/website"
+    repo_name = "actonbp/acton_website_updated"
     issue_term = "title" # url, pathname, or title
     theme = "boxy-light" # TODO: change to "preferred-color-scheme" when you enable dark mode toggle
     label = "comments :crystal_ball:"
@@ -138,7 +136,7 @@ pygmentsUseClasses = true  # use class names instead of directly inserting color
     weight = 1
   [[menu.header]]
     name = "Blog"
-    title = "Meeting People Where They R"
+    title = "LeadeRship Blog"
     url = "/blog/"
     weight = 2
   [[menu.header]]
@@ -172,6 +170,8 @@ pygmentsUseClasses = true  # use class names instead of directly inserting color
   #  url = "/elements/"
   #  weight = 8
   # Configure footer  
+  
+  
   [[menu.footer]]
     name = "License"
     title = "License Details"

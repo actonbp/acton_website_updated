@@ -4,7 +4,7 @@ title: "LeadeRship Blog: Where R meets leadership, teams, and complexity: |
 author: "Bryan Acton"
 show_post_thumbnail: true
 thumbnail_left: false # for list-sidebar only
-show_author_byline: false
+show_author_byline: true
 show_post_date: true
 # for listing page layout
 layout: list-sidebar # list, list-sidebar, list-grid
