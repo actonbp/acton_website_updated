@@ -5,3 +5,4 @@
 public/
 .httr-oauth
 secret/
+.gitignore
