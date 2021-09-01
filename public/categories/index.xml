@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Bryan Acton</title>
-    <link>https://bpacton.com/categories/</link>
+    <link>https://bpactontest.netlify.app/categories/</link>
     <description>Recent content in Categories on Bryan Acton</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 30 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bpacton.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bpactontest.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Education</title>
-      <link>https://bpacton.com/categories/education/</link>
+      <link>https://bpactontest.netlify.app/categories/education/</link>
       <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/categories/education/</guid>
+      <guid>https://bpactontest.netlify.app/categories/education/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Website</title>
-      <link>https://bpacton.com/categories/website/</link>
+      <link>https://bpactontest.netlify.app/categories/website/</link>
       <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/categories/website/</guid>
+      <guid>https://bpactontest.netlify.app/categories/website/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Research</title>
-      <link>https://bpacton.com/categories/research/</link>
+      <link>https://bpactontest.netlify.app/categories/research/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/categories/research/</guid>
+      <guid>https://bpactontest.netlify.app/categories/research/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://bpacton.com/categories/r/</link>
+      <link>https://bpactontest.netlify.app/categories/r/</link>
       <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/categories/r/</guid>
+      <guid>https://bpactontest.netlify.app/categories/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorial</title>
-      <link>https://bpacton.com/categories/tutorial/</link>
+      <link>https://bpactontest.netlify.app/categories/tutorial/</link>
       <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/categories/tutorial/</guid>
+      <guid>https://bpactontest.netlify.app/categories/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>workshop</title>
-      <link>https://bpacton.com/categories/workshop/</link>
+      <link>https://bpactontest.netlify.app/categories/workshop/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/categories/workshop/</guid>
+      <guid>https://bpactontest.netlify.app/categories/workshop/</guid>
       <description></description>
     </item>
     
     <item>
       <title>package</title>
-      <link>https://bpacton.com/categories/package/</link>
+      <link>https://bpactontest.netlify.app/categories/package/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/categories/package/</guid>
+      <guid>https://bpactontest.netlify.app/categories/package/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Theme Features</title>
-      <link>https://bpacton.com/categories/theme-features/</link>
+      <link>https://bpactontest.netlify.app/categories/theme-features/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/categories/theme-features/</guid>
+      <guid>https://bpactontest.netlify.app/categories/theme-features/</guid>
       <description></description>
     </item>
     

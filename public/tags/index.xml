@@ -2,152 +2,152 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Bryan Acton</title>
-    <link>https://bpacton.com/tags/</link>
+    <link>https://bpactontest.netlify.app/tags/</link>
     <description>Recent content in Tags on Bryan Acton</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 30 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bpacton.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bpactontest.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>accessibility</title>
-      <link>https://bpacton.com/tags/accessibility/</link>
+      <link>https://bpactontest.netlify.app/tags/accessibility/</link>
       <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/accessibility/</guid>
+      <guid>https://bpactontest.netlify.app/tags/accessibility/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blogdown</title>
-      <link>https://bpacton.com/tags/blogdown/</link>
+      <link>https://bpactontest.netlify.app/tags/blogdown/</link>
       <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/blogdown/</guid>
+      <guid>https://bpactontest.netlify.app/tags/blogdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://bpacton.com/tags/hugo/</link>
+      <link>https://bpactontest.netlify.app/tags/hugo/</link>
       <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/hugo/</guid>
+      <guid>https://bpactontest.netlify.app/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://bpacton.com/tags/r/</link>
+      <link>https://bpactontest.netlify.app/tags/r/</link>
       <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/r/</guid>
+      <guid>https://bpactontest.netlify.app/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>EHR</title>
-      <link>https://bpacton.com/tags/ehr/</link>
+      <link>https://bpactontest.netlify.app/tags/ehr/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/ehr/</guid>
+      <guid>https://bpactontest.netlify.app/tags/ehr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>health disparities</title>
-      <link>https://bpacton.com/tags/health-disparities/</link>
+      <link>https://bpactontest.netlify.app/tags/health-disparities/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/health-disparities/</guid>
+      <guid>https://bpactontest.netlify.app/tags/health-disparities/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pregnancy</title>
-      <link>https://bpacton.com/tags/pregnancy/</link>
+      <link>https://bpactontest.netlify.app/tags/pregnancy/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/pregnancy/</guid>
+      <guid>https://bpactontest.netlify.app/tags/pregnancy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
-      <link>https://bpacton.com/tags/git/</link>
+      <link>https://bpactontest.netlify.app/tags/git/</link>
       <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/git/</guid>
+      <guid>https://bpactontest.netlify.app/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>xaringan</title>
-      <link>https://bpacton.com/tags/xaringan/</link>
+      <link>https://bpactontest.netlify.app/tags/xaringan/</link>
       <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/xaringan/</guid>
+      <guid>https://bpactontest.netlify.app/tags/xaringan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo-site</title>
-      <link>https://bpacton.com/tags/hugo-site/</link>
+      <link>https://bpactontest.netlify.app/tags/hugo-site/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/hugo-site/</guid>
+      <guid>https://bpactontest.netlify.app/tags/hugo-site/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AFM</title>
-      <link>https://bpacton.com/tags/afm/</link>
+      <link>https://bpactontest.netlify.app/tags/afm/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/afm/</guid>
+      <guid>https://bpactontest.netlify.app/tags/afm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BAPN</title>
-      <link>https://bpacton.com/tags/bapn/</link>
+      <link>https://bpactontest.netlify.app/tags/bapn/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/bapn/</guid>
+      <guid>https://bpactontest.netlify.app/tags/bapn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>crosslinking</title>
-      <link>https://bpacton.com/tags/crosslinking/</link>
+      <link>https://bpactontest.netlify.app/tags/crosslinking/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/crosslinking/</guid>
+      <guid>https://bpactontest.netlify.app/tags/crosslinking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mechanical loading</title>
-      <link>https://bpacton.com/tags/mechanical-loading/</link>
+      <link>https://bpactontest.netlify.app/tags/mechanical-loading/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/mechanical-loading/</guid>
+      <guid>https://bpactontest.netlify.app/tags/mechanical-loading/</guid>
       <description></description>
     </item>
     
     <item>
       <title>osteoblasts</title>
-      <link>https://bpacton.com/tags/osteoblasts/</link>
+      <link>https://bpactontest.netlify.app/tags/osteoblasts/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/osteoblasts/</guid>
+      <guid>https://bpactontest.netlify.app/tags/osteoblasts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Type I collagen</title>
-      <link>https://bpacton.com/tags/type-i-collagen/</link>
+      <link>https://bpactontest.netlify.app/tags/type-i-collagen/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://bpacton.com/tags/type-i-collagen/</guid>
+      <guid>https://bpactontest.netlify.app/tags/type-i-collagen/</guid>
       <description></description>
     </item>
     
