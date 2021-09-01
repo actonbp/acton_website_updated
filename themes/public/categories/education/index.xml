@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Education on Bryan Acton</title>
+    <link>https://bpacton.com/categories/education/</link>
+    <description>Recent content in Education on Bryan Acton</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bpacton.com/categories/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making an ABM for leadership Pt 2</title>
+      <link>https://bpacton.com/blog/intro_abm_series/04-leadership-abm-code-2/</link>
+      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/blog/intro_abm_series/04-leadership-abm-code-2/</guid>
+      <description>window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34; Copy Code&#34;,&#34;success&#34;:&#34; Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl+C to Copy&#34;})Purpose of this part 2:The goal of this post is to add to part 1, by adding a rule, that, as agents perform together, after 10 interactions, they do not rely on surface level characteristics any longer.
+ Note: What is added from this part of code will be Highlighted in Blue
+ Walkthrough of code for simulation 👇Pseudocode Part 1: Agents1.</description>
+    </item>
+    
+    <item>
+      <title>Making an ABM for leadership Pt 1</title>
+      <link>https://bpacton.com/blog/intro_abm_series/03-leadership-abm-code-1/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/blog/intro_abm_series/03-leadership-abm-code-1/</guid>
+      <description>window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34; Copy Code&#34;,&#34;success&#34;:&#34; Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl+C to Copy&#34;})Walkthrough of code for simulation 👇Pseudocode Part 1: Agents1. Make team of 5 people
+2. Set the majority race and minority race
+3. Assign badge/no badge randomly to team
+Code:
+to do_make_agentscreate-turtles people [set Racei TRUE set Badge TRUE] ; intialize agentslayout-circle sort turtles 6 ; distribute agents on the world&#39;s surfaceask turtles [ set label who] ;associate each agent with numberset n random 5ask n-of n turtles[set breed majors]ask turtles with [breed !</description>
+    </item>
+    
+    <item>
+      <title>Agent-based models for leadership.</title>
+      <link>https://bpacton.com/blog/intro_abm_series/</link>
+      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/blog/intro_abm_series/</guid>
+      <description>** No content below YAML for the series _index. This file is a leaf bundle, and provides settings for the listing page layout and sidebar content.**</description>
+    </item>
+    
+  </channel>
+</rss>

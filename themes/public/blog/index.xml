@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeadeRship Blog: Where R meets leadership, teams, and complexity: | A blog where I practice sharing my work in R. It includes my workflows, notes, R scripts, tutorials, and research. on Bryan Acton</title>
+    <link>https://bpacton.com/blog/</link>
+    <description>Recent content in LeadeRship Blog: Where R meets leadership, teams, and complexity: | A blog where I practice sharing my work in R. It includes my workflows, notes, R scripts, tutorials, and research. on Bryan Acton</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bpacton.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bryan&#39;s First Post</title>
+      <link>https://bpacton.com/blog/deploying-xaringan-slides/</link>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bpacton.com/blog/deploying-xaringan-slides/</guid>
+      <description>summary here</description>
+    </item>
+    
+  </channel>
+</rss>

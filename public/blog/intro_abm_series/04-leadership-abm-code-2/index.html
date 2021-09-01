@@ -49,7 +49,7 @@
  Walkthrough of code for simulation 👇Pseudocode Part 1: Agents1.">
 <meta itemprop="datePublished" content="2021-08-30T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-30T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1026">
+<meta itemprop="wordCount" content="1061">
 <meta itemprop="image" content="https://bpacton.com/blog/intro_abm_series/04-leadership-abm-code-2/featured.jpg">
 
 
@@ -211,8 +211,19 @@
   set size 3]
 end
 
-</code></pre><p><strong>Interpersonal Teamwork Behavior Difference (ITBD):</strong></p>
-<p><code>$$ITBD = \frac{\left | ITBi - ITB\mu    \right |}{\tau  - 1}$$</code>
+</code></pre>
+
+
+
+<h3 id="what-is-the-thin-slices-rule">What is the Thin Slices rule?
+  <a href="#what-is-the-thin-slices-rule" title="Link to heading"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>The Thin slices rule is based on the premise that after minimal interaction (10 minutes), individuals move from surface level features to deep level features when involved in interactions:</p>
+<p><strong>Interpersonal Teamwork Behavior Difference (ITWBD):</strong></p>
+<p><code>$$ITWBD = \frac{\left | ITWBi - ITB\mu    \right |}{\tau  - 1}$$</code>
 `$$ITB = Interpersonal \quad Teamwork \quad Behavior \<br>
 i = Person \<br>
 \tau = Time \<br>

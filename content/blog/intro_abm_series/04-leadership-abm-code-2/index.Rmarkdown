@@ -70,10 +70,13 @@ end
 
 ```
 
+### What is the Thin Slices rule? 
 
-**Interpersonal Teamwork Behavior Difference (ITBD):**
+The Thin slices rule is based on the premise that after minimal interaction (10 minutes), individuals move from surface level features to deep level features when involved in interactions:
 
-$$ITBD = \frac{\left | ITBi - ITB\mu    \right |}{\tau  - 1}$$
+**Interpersonal Teamwork Behavior Difference (ITWBD):**
+
+$$ITWBD = \frac{\left | ITWBi - ITB\mu    \right |}{\tau  - 1}$$
 $$ITB = Interpersonal \quad Teamwork \quad Behavior \\
 i = Person \\
 \tau = Time \\
