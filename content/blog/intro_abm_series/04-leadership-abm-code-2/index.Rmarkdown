@@ -5,7 +5,7 @@ date: '2021-08-30'
 excerpt: 'Here is where we add a rule about thin slices of behavior '
 subtitle: Walkthrough of my code for adding thin slices rule
 lastmod: '2021-08-30'
-draft: yes
+draft: no
 alt: Test for alt text in archetype
 weight: 1
 mathjax: yes

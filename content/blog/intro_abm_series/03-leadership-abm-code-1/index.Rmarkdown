@@ -5,7 +5,7 @@ subtitle: "Walkthrough of my code for building ABM for leadership"
 excerpt: "Let's walkthrough an example of building an ABM for leadership"
 date: 2021-08-20
 lastmod: 2021-08-20
-draft: true
+draft: false
 alt: "Test for alt text in archetype"
 author: Bryan Acton
 ---
