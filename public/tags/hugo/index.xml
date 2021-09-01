@@ -13,12 +13,10 @@
       <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://bpacton.com/blog/intro_abm_series/04-leadership-abm-code-2/</guid>
-      <description>window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34; Copy Code&#34;,&#34;success&#34;:&#34; Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl+C to Copy&#34;})Walkthrough of code for simulation 👇Pseudocode Part 1: Agents1. Make team of 5 people
-2. Set the majority race and minority race
-3. Assign badge/no badge randomly to team
-What is different? Agent&amp;rsquo;s now also have a variable Interpersonal teamwork behavior difference
-Code:
-to do_make_agentscreate-turtles people [set Racei TRUE set Badge TRUE] ; intialize agentslayout-circle sort turtles 6 ; distribute agents on the world&#39;s surfaceask turtles [ set label who] ;associate each agent with numberset n random 5ask n-of n turtles[set breed majors]ask turtles with [breed !</description>
+      <description>window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34; Copy Code&#34;,&#34;success&#34;:&#34; Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl+C to Copy&#34;})\(5 +1\)
+Purpose of this part 2:The goal of this post is to add to part 1, by adding a rule, that, as agents perform together, after 10 interactions, they do not rely on surface level characteristics any longer.
+ Note: What is added from this part of code will be Highlighted in Blue
+ Walkthrough of code for simulation 👇Pseudocode Part 1: Agents1.</description>
     </item>
     
     <item>

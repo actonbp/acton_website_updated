@@ -19,4 +19,6 @@
   <!-- toc.js -->
   {{ $tocJs := resources.Get "js/toc.js" | js.Build "toc.js" | minify | fingerprint }}
   <script src="{{ $tocJs.RelPermalink }}" type="text/javascript"></script>
+  
+  {{ if .Params.mathjax }}{{ partial "mathjax_support.html" . }}{{ end }}
 </head>

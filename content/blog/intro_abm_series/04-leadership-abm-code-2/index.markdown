@@ -1,13 +1,14 @@
 ---
 title: "Making an ABM for leadership Pt 2"
+author: "Bryan Acton"
+date: '2021-08-30'
+excerpt: 'Here is where we add a rule about thin slices of behavior '
+subtitle: Walkthrough of my code for adding thin slices rule
+lastmod: '2021-08-30'
+draft: yes
+alt: Test for alt text in archetype
 weight: 1
-subtitle: "Walkthrough of my code for adding thin slices rule"
-excerpt: "Here is where we add a rule about thin slices of behavior "
-date: 2021-08-30
-lastmod: 2021-08-30
-draft: true
-alt: "Test for alt text in archetype"
-author: Bryan Acton
+mathjax: yes
 ---
 <script src="{{< blogdown/postref >}}index_files/clipboard/clipboard.min.js"></script>
 <link href="{{< blogdown/postref >}}index_files/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
@@ -16,6 +17,12 @@ author: Bryan Acton
 <link href="{{< blogdown/postref >}}index_files/font-awesome/css/all.css" rel="stylesheet" />
 <link href="{{< blogdown/postref >}}index_files/font-awesome/css/v4-shims.css" rel="stylesheet" />
 
+
+## Purpose of this part 2: 
+
+The goal of this post is to add to part 1, by adding a rule, that, as agents perform together, after 10 interactions, they do not rely on surface level characteristics any longer. 
+
+> Note: What is added from this part of code will be <span style="background-color: #1aece9">**Highlighted in Blue**</span>
 
 
 # Walkthrough of code for simulation 👇
@@ -30,7 +37,7 @@ author: Bryan Acton
 **3. Assign badge/no badge randomly to team**
 
 
-<span style="background-color: #1aece9">**What is different? Agent's now also have a variable *Interpersonal teamwork behavior difference***</span>
+<span style="background-color: #1aece9">**Agent's now also have a variable *Interpersonal teamwork behavior difference***</span>
 
 <span style="background-color: #FFFF00">**Code:**</span>
 ```{eval=FALSE}
@@ -38,7 +45,7 @@ to do_make_agents
   create-turtles people [set Racei TRUE set Badge TRUE] ; intialize agents
   layout-circle sort turtles 6 ; distribute agents on the world's surface
   ask turtles [ set label who] ;associate each agent with number
-  set n random 5
+    s012et n random 5
   ask n-of n turtles[
   set breed majors
   ]
@@ -48,23 +55,64 @@ to do_make_agents
   set size 3]
   ask minors [set color grey
   set shape "square"
+  set ITWB_diff (abs(ITWB - ITWB_mean) / ((ticks * 3) - 1))
   set size 3]
 end
 
 ```
 
+
+**Interpersonal Teamwork Behavior Difference (ITBD):**
+
+`$$ITBD = \frac{\left | ITBi - ITB\mu    \right |}{\tau  - 1}$$`
+`$$ITB = Interpersonal \quad Teamwork \quad Behavior \\
+i = Person \\
+\tau = Time \\
+$$
+
 ## Pseudocode Part 2: Interpersonal Teamwork Behavior 
+**4. Each agents decides whether to encourage others**.<span style="background-color: #1aece9">This is now based on ITWB difference if the thin slices rule is on</span>
 
-**4. Each agents decides whether to encourage others** 
+> When the new **thin slices rule** is turned **ON**
+>> If there is less than 10 interactions
+>>> Same rule as when **thin slices rule is turned OFF** (see below)
 
+>> If there is more than 10 interactions 
+>>> The *less different* in ITWB, the *more* likelihood of encouragement 
 
-> If they have a badge, then more racial similarity leads to more likelihood of encouragement 
+> When the new **thin slices rule** is turned **OFF**
+>> If they do have a badge, then more racial similarity leads to *more* likelihood of encouragement 
 
-> If they do not have a badge, then more racial similarity leads to to less likelihood of encouragement 
+>> If they do not have a badge, then more racial similarity leads to *less* likelihood of encouragement 
 
 
 <span style="background-color: #FFFF00">**Code:**</span>
 ```{eval=FALSE}
+to do_encourage
+  ask turtles [
+  ifelse social_identity_rule = TRUE[
+  set cutoff1 random-float 100
+  set cutoff2 random-exponential 10
+  ifelse ticks < rule_switch [
+  ifelse Badge = TRUE
+      [
+    ifelse (race_sim * 100) > cutoff1
+    [set Encouragei 1]
+    [set Encouragei 0]
+    ]
+      [
+     ifelse (race_sim * 100) > cutoff1
+    [set Encouragei 0]
+    [set Encouragei 1]
+    ]
+    ]
+      [
+ifelse (ITWB_diff * 100) < cutoff2
+    [set Encouragei 1]
+    [set Encouragei 0]
+    ]
+    ]
+    [
   set cutoff1 random-float 100
   ifelse Badge = TRUE
       [
@@ -77,19 +125,54 @@ end
     [set Encouragei 0]
     [set Encouragei 1]
     ]
+    ]
+    ]
+end
 
 ```
 
-**5. Each agent decides whether they should perform Interpersonal Teamwork Behavior (ITWB)**
+**5. Each agent decides whether they should perform Interpersonal Teamwork Behavior (ITWB)**.<span style="background-color: #1aece9">This is now also based on ITWB difference if the thin slices rule is on</span>
 
-> If they have a badge, then more racial similarity leads to more likelihood of decision to perform ITWB
+> When the new **thin slices rule** is turned **ON**
+>> If there is less than 10 interactions
+>>> Same rule as when **thin slices rule is turned OFF** (see below)
 
-> If they do not have a badge, then more racial similarity leads to to less likelihood of decision to perform ITWB
+>> If there is more than 10 interactions 
+>>> The *less different* in ITWB, the *more* likelihood of decision 
+
+> When the new **thin slices rule** is turned **OFF**
+> If they have a badge, then more racial similarity leads *more* likelihood of decision 
+
+> If they do not have a badge, then more racial similarity leads to *less* likelihood of decision 
 
 <span style="background-color: #FFFF00">**Code:**</span>
 ```{eval=FALSE}
-  set cutoff1 random-float 100
+ask turtles[
+    ifelse social_identity_rule = TRUE[
+    set cutoff1 random-float 100
+    set cutoff2 random-exponential 10
+    ifelse ticks < rule_switch [
   ifelse Badge = TRUE
+      [
+    ifelse (race_sim * 100) > cutoff1
+    [set Decidei 50]
+    [set Decidei 0]
+    ]
+      [
+     ifelse (race_sim * 100) > cutoff1
+    [set Decidei 0]
+    [set Decidei 50]
+    ]
+    ]
+      [
+
+    ifelse (ITWB_diff * 100) < cutoff2
+    [set Decidei 50]
+    [set Decidei 0]
+    ]
+      ]
+    [
+      ifelse Badge = TRUE
       [
     ifelse (race_sim * 100) > cutoff1
     [set Decidei 50]
@@ -100,6 +183,7 @@ end
     [set Decidei 0]
     [set Decidei 50]
       ]
+    ]
 ```
 
 **6. Each agent performs ITWB based on previous decision as well as encouragement from the group and validation from the group the prior time point**
@@ -114,11 +198,19 @@ set cutoff3 random-float 150
     [set Influencei 0]
 ```
 
-**7. Each agent decides to validate other group members performance of ITWB**
+**7. Each agent decides to validate other group members performance of ITWB**.<span style="background-color: #1aece9">This is now also based on ITWB difference if the thin slices rule is on</span>
 
-> If they have a badge, then more racial similarity leads to more likelihood of validation
+> When the new **thin slices rule** is turned **ON**
+>> If there is less than 10 interactions
+>>> Same rule as when **thin slices rule is turned OFF** (see below)
 
-> If they do not have a badge, then more racial similarity leads to to less likelihood of validation
+>> If there is more than 10 interactions 
+>>> The *less different* in ITWB, the *more* likelihood of validation
+
+> When the new **thin slices rule** is turned **OFF**
+> If they have a badge, then more racial similarity leads to *more* likelihood of validation
+
+> If they do not have a badge, then more racial similarity leads to to *less* likelihood of validation
 
 <span style="background-color: #FFFF00">**Code:**</span>
 ```{eval=FALSE}

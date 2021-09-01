@@ -44,15 +44,13 @@
     
     
   <meta itemprop="name" content="Making an ABM for leadership Pt 2">
-<meta itemprop="description" content="window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34; Copy Code&#34;,&#34;success&#34;:&#34; Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl&#43;C to Copy&#34;})Walkthrough of code for simulation 👇Pseudocode Part 1: Agents1. Make team of 5 people
-2. Set the majority race and minority race
-3. Assign badge/no badge randomly to team
-What is different? Agent&rsquo;s now also have a variable Interpersonal teamwork behavior difference
-Code:
-to do_make_agentscreate-turtles people [set Racei TRUE set Badge TRUE] ; intialize agentslayout-circle sort turtles 6 ; distribute agents on the world&#39;s surfaceask turtles [ set label who] ;associate each agent with numberset n random 5ask n-of n turtles[set breed majors]ask turtles with [breed !">
+<meta itemprop="description" content="window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34; Copy Code&#34;,&#34;success&#34;:&#34; Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl&#43;C to Copy&#34;})\(5 &#43;1\)
+Purpose of this part 2:The goal of this post is to add to part 1, by adding a rule, that, as agents perform together, after 10 interactions, they do not rely on surface level characteristics any longer.
+ Note: What is added from this part of code will be Highlighted in Blue
+ Walkthrough of code for simulation 👇Pseudocode Part 1: Agents1.">
 <meta itemprop="datePublished" content="2021-08-30T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-30T00:00:00+00:00" />
-<meta itemprop="wordCount" content="599">
+<meta itemprop="wordCount" content="694">
 <meta itemprop="image" content="https://bpacton.com/blog/intro_abm_series/04-leadership-abm-code-2/featured.jpg">
 
 
@@ -75,6 +73,29 @@ to do_make_agentscreate-turtles people [set Racei TRUE set Badge TRUE] ; intial
   
   
   <script src="/toc.min.7457ac8666592058f33bd488b9df0178094acfa874e53b9f52f7930c1db1e79d.js" type="text/javascript"></script>
+  
+  <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: false
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
       <div class="grid-container single-series">
@@ -137,6 +158,21 @@ to do_make_agentscreate-turtles people [set Racei TRUE set Badge TRUE] ; intial
 <script>window.xaringanExtraClipboard(null, {"button":"<i class=\"fa fa-clipboard\"><\/i> Copy Code","success":"<i class=\"fa fa-check\" style=\"color: #90BE6D\"><\/i> Copied!","error":"Press Ctrl+C to Copy"})</script>
 <link href="https://bpacton.com/blog/intro_abm_series/04-leadership-abm-code-2/index_files/font-awesome/css/all.css" rel="stylesheet" />
 <link href="https://bpacton.com/blog/intro_abm_series/04-leadership-abm-code-2/index_files/font-awesome/css/v4-shims.css" rel="stylesheet" />
+<p><code>\(5 +1\)</code></p>
+
+
+
+
+<h2 id="purpose-of-this-part-2">Purpose of this part 2:
+  <a href="#purpose-of-this-part-2" title="Link to heading"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>The goal of this post is to add to part 1, by adding a rule, that, as agents perform together, after 10 interactions, they do not rely on surface level characteristics any longer.</p>
+<blockquote>
+<p>Note: What is added from this part of code will be <span style="background-color: #1aece9"><strong>Highlighted in Blue</strong></span></p>
+</blockquote>
 
 
 
@@ -157,13 +193,13 @@ to do_make_agentscreate-turtles people [set Racei TRUE set Badge TRUE] ; intial
 <p><strong>1. Make team of 5 people</strong></p>
 <p><strong>2. Set the majority race and minority race</strong></p>
 <p><strong>3. Assign badge/no badge randomly to team</strong></p>
-<p><span style="background-color: #1aece9"><strong>What is different? Agent&rsquo;s now also have a variable <em>Interpersonal teamwork behavior difference</em></strong></span></p>
+<p><span style="background-color: #1aece9"><strong>4. Agent&rsquo;s now also have a variable <em>Interpersonal teamwork behavior difference</em></strong></span></p>
 <p><span style="background-color: #FFFF00"><strong>Code:</strong></span></p>
 <pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">to do_make_agents
   create-turtles people [set Racei TRUE set Badge TRUE] ; intialize agents
   layout-circle sort turtles 6 ; distribute agents on the world's surface
   ask turtles [ set label who] ;associate each agent with number
-  set n random 5
+    s012et n random 5
   ask n-of n turtles[
   set breed majors
   ]
@@ -173,10 +209,19 @@ to do_make_agentscreate-turtles people [set Racei TRUE set Badge TRUE] ; intial
   set size 3]
   ask minors [set color grey
   set shape &quot;square&quot;
+  set ITWB_diff (abs(ITWB - ITWB_mean) / ((ticks * 3) - 1))
   set size 3]
 end
 
-</code></pre>
+</code></pre><p>Interpersonal Teamwork Behavior Difference (ITBD):</p>
+<p><code>$$ITBD = \frac{\left | ITBi - ITB\mu    \right |}{\tau  - 1}$$</code></p>
+<p>$$
+\<br>
+ITB = Interpersonal \quad Teamwork \quad Behavior\<br>
+i = Person
+\<br>
+\tau = Time$$`</p>
+
 
 
 
@@ -382,6 +427,11 @@ end
     <div class="pl2 pr0 mh0">
     <nav id="TableOfContents">
   <ul>
+    <li>
+      <ul>
+        <li><a href="#purpose-of-this-part-2">Purpose of this part 2:</a></li>
+      </ul>
+    </li>
     <li><a href="#walkthrough-of-code-for-simulation-">Walkthrough of code for simulation 👇</a>
       <ul>
         <li><a href="#pseudocode-part-1-agents">Pseudocode Part 1: Agents</a></li>
