@@ -1,297 +1,179 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://bpactontest.netlify.app/blog/intro_abm_series/04-leadership-abm-code-2/</loc>
     <lastmod>2021-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/blog/intro_abm_series/03-leadership-abm-code-1/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/collection/day02/01-netlify/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/collection/day01/01-github/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/collection/prework/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/collection/day01/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/collection/day01/02-postcards/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/collection/day02/02-blogdown/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/collection/day02/</loc>
     <lastmod>2021-01-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/collection/day01/03-distill/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/collection/day02/03-blogdown/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/series/abm-for-leadership/</loc>
     <lastmod>2021-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/accessibility/</loc>
     <lastmod>2021-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/blog/intro_abm_series/</loc>
     <lastmod>2021-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/blogdown/</loc>
     <lastmod>2021-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/</loc>
     <lastmod>2021-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/categories/</loc>
     <lastmod>2021-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/categories/education/</loc>
     <lastmod>2021-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/hugo/</loc>
     <lastmod>2021-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/blog/</loc>
     <lastmod>2021-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/r/</loc>
     <lastmod>2021-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/series/</loc>
     <lastmod>2021-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/</loc>
     <lastmod>2021-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/categories/website/</loc>
     <lastmod>2021-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/ehr/</loc>
     <lastmod>2021-04-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/health-disparities/</loc>
     <lastmod>2021-04-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/publication/smm-individual-neighborhood/</loc>
     <lastmod>2021-04-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/pregnancy/</loc>
     <lastmod>2021-04-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/publication/</loc>
     <lastmod>2021-04-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/categories/research/</loc>
     <lastmod>2021-04-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/blog/deploying-xaringan-slides/</loc>
     <lastmod>2021-03-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/git/</loc>
     <lastmod>2021-03-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/categories/r/</loc>
     <lastmod>2021-03-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/categories/tutorial/</loc>
     <lastmod>2021-03-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/xaringan/</loc>
     <lastmod>2021-03-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/collection/</loc>
     <lastmod>2021-01-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/events/campfire/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/events/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/categories/workshop/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/project/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/hugo-site/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/categories/package/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/project/giraffes/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/categories/theme-features/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/project/penguins/</loc>
     <lastmod>2019-07-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/project/bakeoff/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/contact/</loc>
     <lastmod>2019-02-25T13:38:41-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/form/</loc>
     <lastmod>2019-02-25T13:38:41-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/elements/</loc>
     <lastmod>2019-02-18T12:27:33-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/afm/</loc>
     <lastmod>2018-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/bapn/</loc>
     <lastmod>2018-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/publication/dissertation/</loc>
     <lastmod>2018-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/crosslinking/</loc>
     <lastmod>2018-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/mechanical-loading/</loc>
     <lastmod>2018-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/osteoblasts/</loc>
     <lastmod>2018-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/tags/type-i-collagen/</loc>
     <lastmod>2018-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/about/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/contributors/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bpactontest.netlify.app/license/</loc>
   </url>
-  
 </urlset>
