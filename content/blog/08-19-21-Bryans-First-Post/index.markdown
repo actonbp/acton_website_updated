@@ -16,7 +16,7 @@ summary: A ten-step workflow for creating an HTML xaringan slide deck and deploy
   it to the web using GitHub Pages
 lastmod: '2021-03-16'
 featured: yes
-draft: no
+draft: yes
 image:
   caption: Photo by [Vincentiu Solomon](https://unsplash.com/@vincentiu)
   focal_point: Center
