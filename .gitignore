@@ -2,7 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
-public/
 .httr-oauth
 secret/
 .gitignore
+/public/
+/resources/
