@@ -44,13 +44,12 @@
     
     
   <meta itemprop="name" content="Making an ABM for leadership Pt 2">
-<meta itemprop="description" content="window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34; Copy Code&#34;,&#34;success&#34;:&#34; Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl&#43;C to Copy&#34;})\(5 &#43;1\)
-Purpose of this part 2:The goal of this post is to add to part 1, by adding a rule, that, as agents perform together, after 10 interactions, they do not rely on surface level characteristics any longer.
+<meta itemprop="description" content="window.xaringanExtraClipboard(null, {&#34;button&#34;:&#34; Copy Code&#34;,&#34;success&#34;:&#34; Copied!&#34;,&#34;error&#34;:&#34;Press Ctrl&#43;C to Copy&#34;})Purpose of this part 2:The goal of this post is to add to part 1, by adding a rule, that, as agents perform together, after 10 interactions, they do not rely on surface level characteristics any longer.
  Note: What is added from this part of code will be Highlighted in Blue
  Walkthrough of code for simulation 👇Pseudocode Part 1: Agents1.">
 <meta itemprop="datePublished" content="2021-08-30T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-30T00:00:00+00:00" />
-<meta itemprop="wordCount" content="694">
+<meta itemprop="wordCount" content="1026">
 <meta itemprop="image" content="https://bpacton.com/blog/intro_abm_series/04-leadership-abm-code-2/featured.jpg">
 
 
@@ -158,7 +157,6 @@ Purpose of this part 2:The goal of this post is to add to part 1, by adding
 <script>window.xaringanExtraClipboard(null, {"button":"<i class=\"fa fa-clipboard\"><\/i> Copy Code","success":"<i class=\"fa fa-check\" style=\"color: #90BE6D\"><\/i> Copied!","error":"Press Ctrl+C to Copy"})</script>
 <link href="https://bpacton.com/blog/intro_abm_series/04-leadership-abm-code-2/index_files/font-awesome/css/all.css" rel="stylesheet" />
 <link href="https://bpacton.com/blog/intro_abm_series/04-leadership-abm-code-2/index_files/font-awesome/css/v4-shims.css" rel="stylesheet" />
-<p><code>\(5 +1\)</code></p>
 
 
 
@@ -193,7 +191,7 @@ Purpose of this part 2:The goal of this post is to add to part 1, by adding
 <p><strong>1. Make team of 5 people</strong></p>
 <p><strong>2. Set the majority race and minority race</strong></p>
 <p><strong>3. Assign badge/no badge randomly to team</strong></p>
-<p><span style="background-color: #1aece9"><strong>4. Agent&rsquo;s now also have a variable <em>Interpersonal teamwork behavior difference</em></strong></span></p>
+<p><span style="background-color: #1aece9"><strong>Agent&rsquo;s now also have a variable <em>Interpersonal teamwork behavior difference</em></strong></span></p>
 <p><span style="background-color: #FFFF00"><strong>Code:</strong></span></p>
 <pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">to do_make_agents
   create-turtles people [set Racei TRUE set Badge TRUE] ; intialize agents
@@ -213,14 +211,12 @@ Purpose of this part 2:The goal of this post is to add to part 1, by adding
   set size 3]
 end
 
-</code></pre><p>Interpersonal Teamwork Behavior Difference (ITBD):</p>
-<p><code>$$ITBD = \frac{\left | ITBi - ITB\mu    \right |}{\tau  - 1}$$</code></p>
-<p>$$
-\<br>
-ITB = Interpersonal \quad Teamwork \quad Behavior\<br>
-i = Person
-\<br>
-\tau = Time$$`</p>
+</code></pre><p><strong>Interpersonal Teamwork Behavior Difference (ITBD):</strong></p>
+<p><code>$$ITBD = \frac{\left | ITBi - ITB\mu    \right |}{\tau  - 1}$$</code>
+`$$ITB = Interpersonal \quad Teamwork \quad Behavior \<br>
+i = Person \<br>
+\tau = Time \<br>
+$$</p>
 
 
 
@@ -231,15 +227,42 @@ i = Person
       <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
     </svg></a>
 </h2>
-<p><strong>4. Each agents decides whether to encourage others</strong></p>
+<p><strong>4. Each agents decides whether to encourage others</strong>.<span style="background-color: #1aece9">This is now based on ITWB difference if the thin slices rule is on</span></p>
 <blockquote>
-<p>If they have a badge, then more racial similarity leads to more likelihood of encouragement</p>
+<p>When the new <strong>thin slices rule</strong> is turned <strong>ON</strong></p>
+<blockquote>
+<p>If there is less than 10 interactions</p>
+<blockquote>
+<p>Same rule as when <strong>thin slices rule is turned OFF</strong> (see below)</p>
+</blockquote>
+</blockquote>
 </blockquote>
 <blockquote>
-<p>If they do not have a badge, then more racial similarity leads to to less likelihood of encouragement</p>
+<blockquote>
+<p>If there is more than 10 interactions</p>
+<blockquote>
+<p>The <em>less different</em> in ITWB, the <em>more</em> likelihood of encouragement</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>When the new <strong>thin slices rule</strong> is turned <strong>OFF</strong></p>
+<blockquote>
+<p>If they do have a badge, then more racial similarity leads to <em>more</em> likelihood of encouragement</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>If they do not have a badge, then more racial similarity leads to <em>less</em> likelihood of encouragement</p>
+</blockquote>
 </blockquote>
 <p><span style="background-color: #FFFF00"><strong>Code:</strong></span></p>
-<pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">  set cutoff1 random-float 100
+<pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">to do_encourage
+  ask turtles [
+  ifelse social_identity_rule = TRUE[
+  set cutoff1 random-float 100
+  set cutoff2 random-exponential 10
+  ifelse ticks &lt; rule_switch [
   ifelse Badge = TRUE
       [
     ifelse (race_sim * 100) &gt; cutoff1
@@ -251,17 +274,82 @@ i = Person
     [set Encouragei 0]
     [set Encouragei 1]
     ]
+    ]
+      [
+ifelse (ITWB_diff * 100) &lt; cutoff2
+    [set Encouragei 1]
+    [set Encouragei 0]
+    ]
+    ]
+    [
+  set cutoff1 random-float 100
+  ifelse Badge = TRUE
+      [
+    ifelse (race_sim * 100) &gt; cutoff1
+    [set Encouragei 1]
+    [set Encouragei 0]
+    ]
+      [
+     ifelse (race_sim * 100) &gt; cutoff1
+    [set Encouragei 0]
+    [set Encouragei 1]
+    ]
+    ]
+    ]
+end
 
-</code></pre><p><strong>5. Each agent decides whether they should perform Interpersonal Teamwork Behavior (ITWB)</strong></p>
+</code></pre><p><strong>5. Each agent decides whether they should perform Interpersonal Teamwork Behavior (ITWB)</strong>.<span style="background-color: #1aece9">This is now also based on ITWB difference if the thin slices rule is on</span></p>
 <blockquote>
-<p>If they have a badge, then more racial similarity leads to more likelihood of decision to perform ITWB</p>
+<p>When the new <strong>thin slices rule</strong> is turned <strong>ON</strong></p>
+<blockquote>
+<p>If there is less than 10 interactions</p>
+<blockquote>
+<p>Same rule as when <strong>thin slices rule is turned OFF</strong> (see below)</p>
+</blockquote>
+</blockquote>
 </blockquote>
 <blockquote>
-<p>If they do not have a badge, then more racial similarity leads to to less likelihood of decision to perform ITWB</p>
+<blockquote>
+<p>If there is more than 10 interactions</p>
+<blockquote>
+<p>The <em>less different</em> in ITWB, the <em>more</em> likelihood of decision</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>When the new <strong>thin slices rule</strong> is turned <strong>OFF</strong>
+If they have a badge, then more racial similarity leads <em>more</em> likelihood of decision</p>
+</blockquote>
+<blockquote>
+<p>If they do not have a badge, then more racial similarity leads to <em>less</em> likelihood of decision</p>
 </blockquote>
 <p><span style="background-color: #FFFF00"><strong>Code:</strong></span></p>
-<pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">  set cutoff1 random-float 100
+<pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">ask turtles[
+    ifelse social_identity_rule = TRUE[
+    set cutoff1 random-float 100
+    set cutoff2 random-exponential 10
+    ifelse ticks &lt; rule_switch [
   ifelse Badge = TRUE
+      [
+    ifelse (race_sim * 100) &gt; cutoff1
+    [set Decidei 50]
+    [set Decidei 0]
+    ]
+      [
+     ifelse (race_sim * 100) &gt; cutoff1
+    [set Decidei 0]
+    [set Decidei 50]
+    ]
+    ]
+      [
+
+    ifelse (ITWB_diff * 100) &lt; cutoff2
+    [set Decidei 50]
+    [set Decidei 0]
+    ]
+      ]
+    [
+      ifelse Badge = TRUE
       [
     ifelse (race_sim * 100) &gt; cutoff1
     [set Decidei 50]
@@ -272,6 +360,7 @@ i = Person
     [set Decidei 0]
     [set Decidei 50]
       ]
+    ]
 </code></pre><p><strong>6. Each agent performs ITWB based on previous decision as well as encouragement from the group and validation from the group the prior time point</strong></p>
 <p><span style="background-color: #FFFF00"><strong>Code:</strong></span></p>
 <pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">set cutoff3 random-float 150
@@ -280,12 +369,30 @@ i = Person
     ifelse (encour_sum + valid_sum * 10) + Decidei &gt; cutoff3
     [set Influencei 1]
     [set Influencei 0]
-</code></pre><p><strong>7. Each agent decides to validate other group members performance of ITWB</strong></p>
+</code></pre><p><strong>7. Each agent decides to validate other group members performance of ITWB</strong>.<span style="background-color: #1aece9">This is now also based on ITWB difference if the thin slices rule is on</span></p>
 <blockquote>
-<p>If they have a badge, then more racial similarity leads to more likelihood of validation</p>
+<p>When the new <strong>thin slices rule</strong> is turned <strong>ON</strong></p>
+<blockquote>
+<p>If there is less than 10 interactions</p>
+<blockquote>
+<p>Same rule as when <strong>thin slices rule is turned OFF</strong> (see below)</p>
+</blockquote>
+</blockquote>
 </blockquote>
 <blockquote>
-<p>If they do not have a badge, then more racial similarity leads to to less likelihood of validation</p>
+<blockquote>
+<p>If there is more than 10 interactions</p>
+<blockquote>
+<p>The <em>less different</em> in ITWB, the <em>more</em> likelihood of validation</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>When the new <strong>thin slices rule</strong> is turned <strong>OFF</strong>
+If they have a badge, then more racial similarity leads to <em>more</em> likelihood of validation</p>
+</blockquote>
+<blockquote>
+<p>If they do not have a badge, then more racial similarity leads to to <em>less</em> likelihood of validation</p>
 </blockquote>
 <p><span style="background-color: #FFFF00"><strong>Code:</strong></span></p>
 <pre><code class="language-{eval=FALSE}" data-lang="{eval=FALSE}">  set cutoff1 random-float 100
