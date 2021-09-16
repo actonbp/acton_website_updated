@@ -104,7 +104,7 @@ pygmentsUseClasses = true  # use class names instead of directly inserting color
   [[params.social]]
       icon      = "github" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://github.com/spcanelon/actonbp"
+      url       = "https://github.com/actonbp"
   [[params.social]]
       icon      = "orcid" # icon name without the 'fa-'
       icon_pack = "ai"
@@ -116,7 +116,7 @@ pygmentsUseClasses = true  # use class names instead of directly inserting color
   [[params.social]]
       icon      = "linkedin" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://linkedin.com/in/bpacton"
+      url       = "https://linkedin.com/in/bryanpacton/"
 #  [[params.social]]
 #      icon      = "rss" # icon name without the 'fa-'
 #      icon_pack = "fas"
