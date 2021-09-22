@@ -161,7 +161,7 @@ pygmentsUseClasses = true  # use class names instead of directly inserting color
 [[menu.header]]
    name = "CV"
    title = "See my CV"
-   url = "/CV/Acton_CV_4.16.21.html"
+   url = "/cv/cv.html"
    weight = 6
   #[[menu.header]]
   #  name = "A collection"

@@ -1,14 +1,12 @@
 ---
-author: Eric Anderson
+author: Bryan Acton
 categories:
 - Theme Features
 - R
 - package
 date: "2019-07-02"
 draft: false
-excerpt: Grid is the very first CSS module created specifically to solve the layout
-  problems we’ve all been hacking our way around for as long as we’ve been making
-  websites.
+excerpt: In progress
 layout: single-sidebar
 links:
 - icon: door-open
@@ -26,7 +24,7 @@ links:
 subtitle: ""
 tags:
 - hugo-site
-title: Palmer Penguins
+title: Capturing the processes of leadership emergence
 ---
 
 ### “Grid is the very first CSS module created specifically to solve the layout problems we've all been hacking our way around for as long as we've been making websites.”

@@ -1,7 +1,7 @@
 ---
 title: Events
 description: |
-  This is a home for invited talks, workshops, and streams related to my work
+  This is a home for invited talks, meetings, workshops, and streams related to my work
 author: "Bryan Acton"
 show_post_thumbnail: true
 show_author_byline: false
@@ -20,7 +20,7 @@ sidebar:
     
     Check out the _index.md file in the /talk folder 
     to edit this content. 
-  author: "The R Markdown Team @RStudio"
+  author: "Bryan Acton"
   text_link_label: Subscribe via RSS
   text_link_url: /talk/index.xml
   show_sidebar_adunit: true # show ad container

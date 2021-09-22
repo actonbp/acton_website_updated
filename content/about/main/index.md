@@ -1,16 +1,19 @@
 ---
 ## Configure page content in wide column
-title: "Why apéro?" # leave blank to exclude
+title: "Lately..." # leave blank to exclude
 number_featured: 1 # pulling from mainSections in config.toml
+use_featured: false # if false, use most recent by date
 number_categories: 3 # set to zero to exclude
 show_intro: true
 intro: |
-  Apéro is a unique kind of casual get-together in French culture, when you gather with friends and get to know each other better over some apéritifs, snacks, and anything in between. A good apéro is one where you'd happily spend a few hours just hanging out.
+  | I've been using [R](https://www.r-project.org/about.html) to all aspects of my research and my work. This is my brand new website I built using R, so please be patient as I update it with all of my work. Keep up with my work including my tutorials in my [blog](/blog) and my current research projects in [projects](/project). Sign up for my office hours here: [office hours](/open-office-hours). |
   
-  I hope this theme helps you `branch` your own virtual apéro. A place where you and your site's visitors enjoy spending time, and one that helps folks get to know you better. 
+  See my updated CV [here](/cv/cv.html)
+  
+
 show_outro: true
 outro: |
-  <i class="fas fa-glass-cheers pr2"></i>Sincere thanks to [Silvia Canelón](https://silvia.rbind.io/) for her great website ideas and [Alison Hill](https://alison.rbind.io/) for her amazing theme!
+  <i class="fas fa-lightbulb pr2"></i>Leadership researcher fascinated by data analytics, complexity theory, and improving the teamwork part of science. 
 ---
 
 ** index doesn't contain a body, just front matter above.
