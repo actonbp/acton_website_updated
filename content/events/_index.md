@@ -1,7 +1,7 @@
 ---
 title: Events
 description: |
-  This is a home for invited talks, meetings, workshops, and streams related to my work
+  This is a home for invited talks, workshops, and streams related to my work
 author: "Bryan Acton"
 show_post_thumbnail: true
 show_author_byline: false

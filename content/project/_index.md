@@ -8,7 +8,7 @@ cascade:
     show_sidebar_adunit: true
     text_link_label: View all projects
     text_link_url: /project/
-description: Please check back (very!) soon for more info on my current projects. 
+description: These pages are in progress so check back soon for updates
 layout: list-grid
 show_author_byline: true
 show_post_date: false
@@ -21,7 +21,7 @@ sidebar:
   text_link_label: ""
   text_link_url: ""
   title: A Sidebar for Your Projects
-title: This project page is currently under construction!
+title: Here are all my current projects!
 ---
 
 ** No content for the project index. This file provides front matter for the blog including the layout and boolean options. **

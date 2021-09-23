@@ -1,9 +1,9 @@
 ---
 ## Configure sidebar content in narrow column
-author: "Hugo Apéro"
-role: "A Hugo theme"
+author: "Bryan Acton"
+role: "My Personal Website"
 avatar: crosby.jpg
-avatar_shape: rounded # circle, square, rounded
+avatar_shape: square # circle, square, rounded
 show_social_links: true # specify social accounts in site config
 show_audio_link: false
 audio_link: 
