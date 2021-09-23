@@ -20,6 +20,6 @@ links:
 subtitle: An R Package
 tags:
 - hugo-site
-title: Identity Dynamics
+title: Leader Identity System Dynamics
 ---
 
