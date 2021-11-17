@@ -1,12 +1,11 @@
 ---
-author: Alison Hill
+author: Bryan Acton
 cascade:
   layout: single-series
   sidebar:
     author: Alison Hill
-    description: "Sometimes you want a souped-up series- a bundle of related pages
-      \nmeant to be read in sequence. This section is like a blog series, \nminus
-      the blog.\n"
+    description: "This is a secret page that is a work in progress,
+      \nmeant to not be found. Congrats on the secret find!\n"
     show_author_byline: true
     show_post_date: true
     show_sidebar_adunit: true
