@@ -3,7 +3,7 @@ author: Bryan Acton
 cascade:
   layout: single-series
   sidebar:
-    author: Alison Hill
+    author: Bryan Acton
     description: "This is a secret page that is a work in progress,
       \nmeant to not be found. Congrats on the secret find!\n"
     show_author_byline: true
