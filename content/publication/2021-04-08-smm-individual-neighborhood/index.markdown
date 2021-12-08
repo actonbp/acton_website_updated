@@ -23,6 +23,10 @@ links:
   icon_pack: ai
   name: Publication
   url: https://doi.org/10.1016/j.leaqua.2018.07.002
+- icon: file-pdf
+  icon_pack: fas
+  name: Accepted Version PDF
+  url: https://dro.dur.ac.uk/25495/2/25495.pdf?DDD2+gfzk42+d700tmt
 image:
   caption: ''
   placement: 2
