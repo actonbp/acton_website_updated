@@ -11,11 +11,13 @@ intro: |
   
   **See my updated CV [here](/cv/cv.html)** |
   **See my current todo list [here](/todo)**
-  
 
 show_outro: true
 outro: |
   <i class="fas fa-lightbulb pr2"></i>Leadership researcher fascinated by data analytics, complexity theory, and improving the teamwork part of science. 
+  
+  <a href="https://www.buymeacoffee.com/bpacton" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-red.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+  
 ---
 
 ** index doesn't contain a body, just front matter above.
