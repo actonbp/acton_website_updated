@@ -41,7 +41,7 @@ pygmentsUseClasses = true  # use class names instead of directly inserting color
   #description = "A modern, beautiful, and easily configurable blog theme for Hugo."
   description = "Personal website of Bryan Acton"
   #favicon = "/img/favicon.ico"
-  favicon = "/img/logo_2.ico"
+  favicon = "/img/logo_2.png"
   #logo = "/img/blogophonic-mark-dark.png"
   logo = "/img/logo_2.png"
   mainSections = ["blog", "talk", "publication", "project"]
@@ -52,8 +52,7 @@ pygmentsUseClasses = true  # use class names instead of directly inserting color
   socialInFooter = true
   # Default image for social sharing and search engines. 
   # Place image file in `static` folder and specify image name here.
-  #sharing_image = "/img/papillons.jpg"
-  sharing_image = "/img/LakePink_Social.png"
+  sharing_image = "/img/avatar.png"
   # Twitter username (without @). Used when a visitor shares your site on Twitter.
   twitter = "bp_acton"
   

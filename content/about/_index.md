@@ -1,11 +1,12 @@
 ---
+title: "About"
+description: |
+  Personal website for Bryan Acton
+show_header: true
+sidebar_left: false
+# Keep this! Do not edit.
 cascade:
   headless: true
-description: |
-  Bryan Acton's Personal Website
-show_header: true
-sidebar_left: true
-title: About
 ---
 
 ** index doesn't contain a body, just front matter above.
