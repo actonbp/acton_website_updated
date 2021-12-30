@@ -2,10 +2,10 @@
 ## Configure sidebar content in narrow column
 author: "Bryan Acton"
 role: "My Personal Website"
-avatar: crosby.jpg
+avatar: website_logo.jpg
 avatar_shape: square # circle, square, rounded
 show_social_links: true # specify social accounts in site config
-show_audio_link: false
+show_audio_link: true
 audio_link: 
 - name: How to say my name
   url: audio.m4a
