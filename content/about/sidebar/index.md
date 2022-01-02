@@ -3,7 +3,7 @@
 author: "Bryan Acton"
 role: "My Personal Website"
 avatar: website_logo.jpg
-avatar_shape: square # circle, square, rounded
+avatar_shape: circle # circle, square, rounded
 show_social_links: true # specify social accounts in site config
 show_audio_link: true
 audio_link: 
