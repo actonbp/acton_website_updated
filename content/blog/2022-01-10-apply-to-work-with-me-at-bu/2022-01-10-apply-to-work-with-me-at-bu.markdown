@@ -1,0 +1,56 @@
+---
+title: "Apply to work with me at BU!"
+weight: 1
+subtitle: "Some info on applying to work with me at Binghamton SOM"
+excerpt: "Some info on applying to work with me at Binghamton SOM"
+slug: work-with-me-at-BU-SOM
+alias:
+  - /blog/2022-01-10-apply-to-work-with-me-at-bu
+date: 2022-01-22
+lastmod: 2022-01-22
+draft: true
+alt: "Test for alt text in archetype"
+---
+
+
+
+<style type="text/css">
+.page-main img {
+  box-shadow: 0px 0px 2px 2px rgba( 0, 0, 0, 0.2 );
+  #/* ease | ease-in | ease-out | linear */
+  transition: transform ease-in-out 0.6s;
+}
+
+.page-main img:hover {
+  transform: scale(1.4);
+}
+</style>
+
+
+> **Did you know that 97.4% of home pages have web accessibility failures???** :scream: 
+
+This finding is one of many from an accessibility analysis that non-profit WebAIM (Web Accessibility in Mind) conducts annually on home pages of the top one million websites. You can find a summary of these findings in a WebAIM [blog post](https://webaim.org/blog/webaim-million-2021/) and detailed information in the [full report](https://webaim.org/projects/million/#wcag), both published on April 30, 2021.
+
+Learning about all of the ways that digital content is made inaccessible to people with disabilities has made me take inventory of the different ways that I have contributed to this problem (there was some shame to process here :see_no_evil:). 
+
+The magic of [R Markdown](https://bookdown.org/yihui/rmarkdown/) has given me the gift of turning R code into a variety of HTML outputs including R notebooks, [xaringan presentation slides](/project/xaringan-nhs-r/), and websites like this one -- all of which I've been able to share freely online with others. This magic though (like all magic?) comes with limitations. R tools (and technology more broadly) can't automatically ensure that its various outputs are accessible to everyone. That's where we come in as software developers and content creators and take personal responsibility. At the risk of extending this metaphor too far, I'll finish by offering the framework that we all need to practice (accessibility) spells/skills in order to use these magical tools responsibly.
+
+All of this to say that gaining awareness about accessibility as a way to create the more inclusive world that I want to live in has motivated me to do better. I even found myself excited to conduct accessibility audits on my digital content, including my personal website ([data viz](https://chartability.fizz.studio/) too)! 
+
+### My audit results
+
+I relied on WebAIM's [Web Accessibility Evaluation Tool (WAVE)](https://wave.webaim.org/) to help me get started. I installed the [Firefox extension](https://wave.webaim.org/extension/) to conduct my audit. Here's what I found at a high level, and each section of the post contains an itemized list of failures for the page along with a screenshot:
+
+- Most errors corresponded with missing alt-text for any images that are used to decorate page sidebars or populate thumbnails
+
+- Some of my alt-text descriptions are too long! :laughing: I'll use this example to highlight some of the super helpful features of the WAVE tool. Below is a screenshot of the tool when I select the alert next to the super long alt-text description for a hex logo :woman_facepalming:
+
+    <img src="img/som-academic.jpg" width="360" style="display: block; margin: auto;" />
+
+- My blog and talk listings have redundant links because these layouts have thumbnails enabled and both the thumbnail and the title of the post are active links
+
+- There are 5 alerts (combined) in the navigation bar and footer that appear on every page. These correspond to redundant title links. For example, the link for my Blog has the name "Blog" and also the title "Blog." This is something I can fix easily in the **config.toml** configuration file. I was wondering how these two fields were different in that file and now I know!
+
+- The [blog post example](#blog-example) I documented here contained 177 low contrast errors! These were all related to the [arduino syntax highlighting](https://xyproto.github.io/splash/docs/arduino.html) in the various code chunks that I included. The code chunks currently feature primarily gray code against a white background.
+
+### Next steps
