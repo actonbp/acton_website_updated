@@ -33,12 +33,11 @@ knitr::opts_chunk$set(echo=FALSE, fig.align = "center")
 
 ### How to do it
 
+```{r, fig.cap="", fig.alt="", echo = FALSE}
 
-    ```{r, fig.cap="", fig.alt="", echo = FALSE}
-    
-    knitr::include_graphics("img/apply_to_bing.png")
-    
-    ```
+knitr::include_graphics("img/apply_to_bing.png")
+
+```
 
 
 ### Next steps

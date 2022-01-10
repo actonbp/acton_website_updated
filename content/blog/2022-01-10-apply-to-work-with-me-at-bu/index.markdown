@@ -31,8 +31,7 @@ alt: "Test for alt text in archetype"
 
 ### How to do it
 
-
-    <img src="img/apply_to_bing.png" width="634" style="display: block; margin: auto;" />
+<img src="img/apply_to_bing.png" width="634" style="display: block; margin: auto;" />
 
 
 ### Next steps
