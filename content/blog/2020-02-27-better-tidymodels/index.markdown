@@ -9,6 +9,7 @@ tags:
   - tidymodels
 summary: Taking a sad script and making it better for model cross-validation.
 featured: no
+draft: yes
 disable_jquery: no
 image:
   caption: Image by [Rachel Martin](https://unsplash.com/photos/PnAc2UaeqII)
@@ -105,13 +106,13 @@ tidypenguins <- penguins %>%
 glimpse(tidypenguins)
 #> Rows: 333
 #> Columns: 7
-#> $ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Ade…
-#> $ bill_length_mm    <dbl> 39.1, 39.5, 40.3, 36.7, 39.3, 38.9, 39.2, 41.1, 38.…
-#> $ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, 19.3, 20.6, 17.8, 19.6, 17.6, 21.…
-#> $ flipper_length_mm <int> 181, 186, 195, 193, 190, 181, 195, 182, 191, 198, 1…
-#> $ body_mass_g       <int> 3750, 3800, 3250, 3450, 3650, 3625, 4675, 3200, 380…
-#> $ sex               <fct> male, female, female, female, male, female, male, f…
-#> $ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 200…
+#> $ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~
+#> $ bill_length_mm    <dbl> 39.1, 39.5, 40.3, 36.7, 39.3, 38.9, 39.2, 41.1, 38.6~
+#> $ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, 19.3, 20.6, 17.8, 19.6, 17.6, 21.2~
+#> $ flipper_length_mm <int> 181, 186, 195, 193, 190, 181, 195, 182, 191, 198, 18~
+#> $ body_mass_g       <int> 3750, 3800, 3250, 3450, 3650, 3625, 4675, 3200, 3800~
+#> $ sex               <fct> male, female, female, female, male, female, male, fe~
+#> $ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~
 ```
 
 ## Penguins
@@ -252,7 +253,7 @@ lm_spec %>%
 #> # A tibble: 1 x 3
 #>   .metric .estimator .estimate
 #>   <chr>   <chr>          <dbl>
-#> 1 rmse    standard        278.
+#> 1 rmse    standard        265.
 ```
 
 
@@ -288,7 +289,7 @@ get_rmse(model_spec = lm_spec, split = penguin_split)
 #> # A tibble: 1 x 3
 #>   .metric .estimator .estimate
 #>   <chr>   <chr>          <dbl>
-#> 1 rmse    standard        278.
+#> 1 rmse    standard        265.
 ```
 
 I could also build up a tibble that includes the results, if I wanted to save the predicted values, for example:
@@ -324,6 +325,52 @@ ggplot(penguin_preds, aes(x = .pred, y = (.pred - body_mass_g))) +
   scico::scale_colour_scico_d(end = .8) +
   ggtitle("Residuals vs Fitted")
 #> `geom_smooth()` using formula 'y ~ x'
+#> Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+#> family not found in Windows font database
+
+#> Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+#> family not found in Windows font database
+#> Warning in grid.Call(C_stringMetric, as.graphicsAnnot(x$label)): font family not
+#> found in Windows font database
+#> Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+#> family not found in Windows font database
+
+#> Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+#> family not found in Windows font database
+
+#> Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+#> family not found in Windows font database
+
+#> Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+#> family not found in Windows font database
+
+#> Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+#> family not found in Windows font database
+
+#> Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+#> family not found in Windows font database
+
+#> Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+#> family not found in Windows font database
+
+#> Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+#> family not found in Windows font database
+
+#> Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+#> family not found in Windows font database
+
+#> Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+#> family not found in Windows font database
+#> Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :
+#> font family not found in Windows font database
+#> Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+#> family not found in Windows font database
+
+#> Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+#> family not found in Windows font database
+
+#> Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font
+#> family not found in Windows font database
 ```
 
 <img src="figs/unnamed-chunk-17-1.png" width="672" />
@@ -336,7 +383,7 @@ penguin_preds %>%
 #> # A tibble: 1 x 3
 #>   .metric .estimator .estimate
 #>   <chr>   <chr>          <dbl>
-#> 1 rmse    standard        278.
+#> 1 rmse    standard        265.
 ```
 
 
@@ -358,7 +405,7 @@ get_preds(model_spec = rt_spec,
 #> # A tibble: 1 x 3
 #>   .metric .estimator .estimate
 #>   <chr>   <chr>          <dbl>
-#> 1 rmse    standard        312.
+#> 1 rmse    standard        311.
 ```
 
 Or a random forest:
@@ -378,7 +425,7 @@ get_preds(model_spec = rf_spec,
 #> # A tibble: 1 x 3
 #>   .metric .estimator .estimate
 #>   <chr>   <chr>          <dbl>
-#> 1 rmse    standard        300.
+#> 1 rmse    standard        294.
 ```
 
 But, unfortunately, I shouldn't be predicting with the test set over and over again like this. It isn't good practice to predict with the test set > 1 time. What is a good predictive modeler to do? I should be saving (holding out) the test set and use it to generate predictions exactly once, at the very end &mdash; after I've compared different models, selected my features, and tuned my hyperparameters. How do you do this? You do [cross-validation](https://sebastianraschka.com/blog/2016/model-evaluation-selection-part3.html) with the training set, and you leave the testing set for [*the very last fit you do*](https://tidymodels.github.io/tune/reference/last_fit.html).
@@ -400,16 +447,16 @@ penguin_folds
 #> # A tibble: 10 x 2
 #>    splits           id    
 #>    <list>           <chr> 
-#>  1 <split [225/26]> Fold01
-#>  2 <split [226/25]> Fold02
-#>  3 <split [226/25]> Fold03
-#>  4 <split [226/25]> Fold04
-#>  5 <split [226/25]> Fold05
-#>  6 <split [226/25]> Fold06
-#>  7 <split [226/25]> Fold07
-#>  8 <split [226/25]> Fold08
-#>  9 <split [226/25]> Fold09
-#> 10 <split [226/25]> Fold10
+#>  1 <split [223/26]> Fold01
+#>  2 <split [224/25]> Fold02
+#>  3 <split [224/25]> Fold03
+#>  4 <split [224/25]> Fold04
+#>  5 <split [224/25]> Fold05
+#>  6 <split [224/25]> Fold06
+#>  7 <split [224/25]> Fold07
+#>  8 <split [224/25]> Fold08
+#>  9 <split [224/25]> Fold09
+#> 10 <split [226/23]> Fold10
 ```
 
 
@@ -468,7 +515,7 @@ get_fold_results(
 #> # A tibble: 1 x 3
 #>    rmse id     preds            
 #>   <dbl> <chr>  <list>           
-#> 1  419. Fold01 <tibble [26 × 8]>
+#> 1  304. Fold01 <tibble [26 x 8]>
 ```
 
 Next, I used purrr- but just once. The function `get_fold_results` is doing **most** of the work for us, but I needed purrr to map it across each fold.
@@ -484,16 +531,16 @@ kfold_results
 #> # A tibble: 10 x 3
 #>     rmse id     preds            
 #>    <dbl> <chr>  <list>           
-#>  1  419. Fold01 <tibble [26 × 8]>
-#>  2  326. Fold02 <tibble [25 × 8]>
-#>  3  414. Fold03 <tibble [25 × 8]>
-#>  4  327. Fold04 <tibble [25 × 8]>
-#>  5  336. Fold05 <tibble [25 × 8]>
-#>  6  406. Fold06 <tibble [25 × 8]>
-#>  7  305. Fold07 <tibble [25 × 8]>
-#>  8  301. Fold08 <tibble [25 × 8]>
-#>  9  315. Fold09 <tibble [25 × 8]>
-#> 10  319. Fold10 <tibble [25 × 8]>
+#>  1  304. Fold01 <tibble [26 x 8]>
+#>  2  301. Fold02 <tibble [25 x 8]>
+#>  3  286. Fold03 <tibble [25 x 8]>
+#>  4  320. Fold04 <tibble [25 x 8]>
+#>  5  301. Fold05 <tibble [25 x 8]>
+#>  6  395. Fold06 <tibble [25 x 8]>
+#>  7  339. Fold07 <tibble [25 x 8]>
+#>  8  328. Fold08 <tibble [25 x 8]>
+#>  9  256. Fold09 <tibble [25 x 8]>
+#> 10  318. Fold10 <tibble [23 x 8]>
 ```
 
 Here we are still left with 10 RMSE values- one for each of the 10 folds. We don't care too much about by fold- the power is in the aggregate. Specifically, we mainly care about the central tendency and spread of these RMSE values. Let's finish by combining (or aggregating) these metrics.
@@ -505,7 +552,7 @@ kfold_results %>%
 #> # A tibble: 1 x 2
 #>   mean_rmse sd_rmse
 #>       <dbl>   <dbl>
-#> 1      347.    46.8
+#> 1      315.    36.6
 ```
 
 So, this works. But, can you imagine doing it again? Without errors? Can you imagine teaching it?
@@ -546,25 +593,25 @@ penguin_res <- penguin_folds %>%
 penguin_res
 #> #  10-fold cross-validation using stratification 
 #> # A tibble: 10 x 7
-#>    splits       id     train_set     fit_models test_set     estimates      rmse
-#>    <list>       <chr>  <list>        <list>     <list>       <list>        <dbl>
-#>  1 <split [225… Fold01 <tibble [225… <fit[+]>   <tibble [26… <tibble [26 …  419.
-#>  2 <split [226… Fold02 <tibble [226… <fit[+]>   <tibble [25… <tibble [25 …  326.
-#>  3 <split [226… Fold03 <tibble [226… <fit[+]>   <tibble [25… <tibble [25 …  414.
-#>  4 <split [226… Fold04 <tibble [226… <fit[+]>   <tibble [25… <tibble [25 …  327.
-#>  5 <split [226… Fold05 <tibble [226… <fit[+]>   <tibble [25… <tibble [25 …  336.
-#>  6 <split [226… Fold06 <tibble [226… <fit[+]>   <tibble [25… <tibble [25 …  406.
-#>  7 <split [226… Fold07 <tibble [226… <fit[+]>   <tibble [25… <tibble [25 …  305.
-#>  8 <split [226… Fold08 <tibble [226… <fit[+]>   <tibble [25… <tibble [25 …  301.
-#>  9 <split [226… Fold09 <tibble [226… <fit[+]>   <tibble [25… <tibble [25 …  315.
-#> 10 <split [226… Fold10 <tibble [226… <fit[+]>   <tibble [25… <tibble [25 …  319.
+#>    splits           id     train_set    fit_models test_set    estimates    rmse
+#>    <list>           <chr>  <list>       <list>     <list>      <list>      <dbl>
+#>  1 <split [223/26]> Fold01 <tibble [22~ <fit[+]>   <tibble [2~ <tibble [2~  304.
+#>  2 <split [224/25]> Fold02 <tibble [22~ <fit[+]>   <tibble [2~ <tibble [2~  301.
+#>  3 <split [224/25]> Fold03 <tibble [22~ <fit[+]>   <tibble [2~ <tibble [2~  286.
+#>  4 <split [224/25]> Fold04 <tibble [22~ <fit[+]>   <tibble [2~ <tibble [2~  320.
+#>  5 <split [224/25]> Fold05 <tibble [22~ <fit[+]>   <tibble [2~ <tibble [2~  301.
+#>  6 <split [224/25]> Fold06 <tibble [22~ <fit[+]>   <tibble [2~ <tibble [2~  395.
+#>  7 <split [224/25]> Fold07 <tibble [22~ <fit[+]>   <tibble [2~ <tibble [2~  339.
+#>  8 <split [224/25]> Fold08 <tibble [22~ <fit[+]>   <tibble [2~ <tibble [2~  328.
+#>  9 <split [224/25]> Fold09 <tibble [22~ <fit[+]>   <tibble [2~ <tibble [2~  256.
+#> 10 <split [226/23]> Fold10 <tibble [22~ <fit[+]>   <tibble [2~ <tibble [2~  318.
 
 penguin_res %>% 
   summarise(mean_rmse = mean(rmse), sd_rmse = sd(rmse))
 #> # A tibble: 1 x 2
 #>   mean_rmse sd_rmse
 #>       <dbl>   <dbl>
-#> 1      347.    46.8
+#> 1      315.    36.6
 ```
 
 
@@ -595,16 +642,16 @@ penguin_purrr
 #> # A tibble: 10 x 3
 #>    splits           id     rt_fits 
 #>    <list>           <chr>  <list>  
-#>  1 <split [225/26]> Fold01 <fit[+]>
-#>  2 <split [226/25]> Fold02 <fit[+]>
-#>  3 <split [226/25]> Fold03 <fit[+]>
-#>  4 <split [226/25]> Fold04 <fit[+]>
-#>  5 <split [226/25]> Fold05 <fit[+]>
-#>  6 <split [226/25]> Fold06 <fit[+]>
-#>  7 <split [226/25]> Fold07 <fit[+]>
-#>  8 <split [226/25]> Fold08 <fit[+]>
-#>  9 <split [226/25]> Fold09 <fit[+]>
-#> 10 <split [226/25]> Fold10 <fit[+]>
+#>  1 <split [223/26]> Fold01 <fit[+]>
+#>  2 <split [224/25]> Fold02 <fit[+]>
+#>  3 <split [224/25]> Fold03 <fit[+]>
+#>  4 <split [224/25]> Fold04 <fit[+]>
+#>  5 <split [224/25]> Fold05 <fit[+]>
+#>  6 <split [224/25]> Fold06 <fit[+]>
+#>  7 <split [224/25]> Fold07 <fit[+]>
+#>  8 <split [224/25]> Fold08 <fit[+]>
+#>  9 <split [224/25]> Fold09 <fit[+]>
+#> 10 <split [226/23]> Fold10 <fit[+]>
 ```
 
 #### Round 2
@@ -629,16 +676,16 @@ penguin_purrr
 #> # A tibble: 10 x 4
 #>    splits           id     rt_fits  rt_preds         
 #>    <list>           <chr>  <list>   <list>           
-#>  1 <split [225/26]> Fold01 <fit[+]> <tibble [26 × 8]>
-#>  2 <split [226/25]> Fold02 <fit[+]> <tibble [25 × 8]>
-#>  3 <split [226/25]> Fold03 <fit[+]> <tibble [25 × 8]>
-#>  4 <split [226/25]> Fold04 <fit[+]> <tibble [25 × 8]>
-#>  5 <split [226/25]> Fold05 <fit[+]> <tibble [25 × 8]>
-#>  6 <split [226/25]> Fold06 <fit[+]> <tibble [25 × 8]>
-#>  7 <split [226/25]> Fold07 <fit[+]> <tibble [25 × 8]>
-#>  8 <split [226/25]> Fold08 <fit[+]> <tibble [25 × 8]>
-#>  9 <split [226/25]> Fold09 <fit[+]> <tibble [25 × 8]>
-#> 10 <split [226/25]> Fold10 <fit[+]> <tibble [25 × 8]>
+#>  1 <split [223/26]> Fold01 <fit[+]> <tibble [26 x 8]>
+#>  2 <split [224/25]> Fold02 <fit[+]> <tibble [25 x 8]>
+#>  3 <split [224/25]> Fold03 <fit[+]> <tibble [25 x 8]>
+#>  4 <split [224/25]> Fold04 <fit[+]> <tibble [25 x 8]>
+#>  5 <split [224/25]> Fold05 <fit[+]> <tibble [25 x 8]>
+#>  6 <split [224/25]> Fold06 <fit[+]> <tibble [25 x 8]>
+#>  7 <split [224/25]> Fold07 <fit[+]> <tibble [25 x 8]>
+#>  8 <split [224/25]> Fold08 <fit[+]> <tibble [25 x 8]>
+#>  9 <split [224/25]> Fold09 <fit[+]> <tibble [25 x 8]>
+#> 10 <split [226/23]> Fold10 <fit[+]> <tibble [23 x 8]>
 ```
 
 
@@ -665,16 +712,16 @@ penguin_purrr
 #> # A tibble: 10 x 5
 #>    splits           id     rt_fits  rt_preds          rt_rmse
 #>    <list>           <chr>  <list>   <list>              <dbl>
-#>  1 <split [225/26]> Fold01 <fit[+]> <tibble [26 × 8]>    419.
-#>  2 <split [226/25]> Fold02 <fit[+]> <tibble [25 × 8]>    326.
-#>  3 <split [226/25]> Fold03 <fit[+]> <tibble [25 × 8]>    414.
-#>  4 <split [226/25]> Fold04 <fit[+]> <tibble [25 × 8]>    327.
-#>  5 <split [226/25]> Fold05 <fit[+]> <tibble [25 × 8]>    336.
-#>  6 <split [226/25]> Fold06 <fit[+]> <tibble [25 × 8]>    406.
-#>  7 <split [226/25]> Fold07 <fit[+]> <tibble [25 × 8]>    305.
-#>  8 <split [226/25]> Fold08 <fit[+]> <tibble [25 × 8]>    301.
-#>  9 <split [226/25]> Fold09 <fit[+]> <tibble [25 × 8]>    315.
-#> 10 <split [226/25]> Fold10 <fit[+]> <tibble [25 × 8]>    319.
+#>  1 <split [223/26]> Fold01 <fit[+]> <tibble [26 x 8]>    304.
+#>  2 <split [224/25]> Fold02 <fit[+]> <tibble [25 x 8]>    301.
+#>  3 <split [224/25]> Fold03 <fit[+]> <tibble [25 x 8]>    286.
+#>  4 <split [224/25]> Fold04 <fit[+]> <tibble [25 x 8]>    320.
+#>  5 <split [224/25]> Fold05 <fit[+]> <tibble [25 x 8]>    301.
+#>  6 <split [224/25]> Fold06 <fit[+]> <tibble [25 x 8]>    395.
+#>  7 <split [224/25]> Fold07 <fit[+]> <tibble [25 x 8]>    339.
+#>  8 <split [224/25]> Fold08 <fit[+]> <tibble [25 x 8]>    328.
+#>  9 <split [224/25]> Fold09 <fit[+]> <tibble [25 x 8]>    256.
+#> 10 <split [226/23]> Fold10 <fit[+]> <tibble [23 x 8]>    318.
 ```
 
 Finally, summarizing as I did before:
@@ -686,7 +733,7 @@ penguin_purrr %>%
 #> # A tibble: 1 x 2
 #>   mean_rmse sd_rmse
 #>       <dbl>   <dbl>
-#> 1      347.    46.8
+#> 1      315.    36.6
 ```
 
 In practice, if you did all these at once instead of incrementally, it would look like:
@@ -708,16 +755,16 @@ penguin_folds %>%
 #> # A tibble: 10 x 5
 #>    splits           id     rt_fits  rt_preds          rt_rmse
 #>    <list>           <chr>  <list>   <list>              <dbl>
-#>  1 <split [225/26]> Fold01 <fit[+]> <tibble [26 × 8]>    419.
-#>  2 <split [226/25]> Fold02 <fit[+]> <tibble [25 × 8]>    326.
-#>  3 <split [226/25]> Fold03 <fit[+]> <tibble [25 × 8]>    414.
-#>  4 <split [226/25]> Fold04 <fit[+]> <tibble [25 × 8]>    327.
-#>  5 <split [226/25]> Fold05 <fit[+]> <tibble [25 × 8]>    336.
-#>  6 <split [226/25]> Fold06 <fit[+]> <tibble [25 × 8]>    406.
-#>  7 <split [226/25]> Fold07 <fit[+]> <tibble [25 × 8]>    305.
-#>  8 <split [226/25]> Fold08 <fit[+]> <tibble [25 × 8]>    301.
-#>  9 <split [226/25]> Fold09 <fit[+]> <tibble [25 × 8]>    315.
-#> 10 <split [226/25]> Fold10 <fit[+]> <tibble [25 × 8]>    319.
+#>  1 <split [223/26]> Fold01 <fit[+]> <tibble [26 x 8]>    304.
+#>  2 <split [224/25]> Fold02 <fit[+]> <tibble [25 x 8]>    301.
+#>  3 <split [224/25]> Fold03 <fit[+]> <tibble [25 x 8]>    286.
+#>  4 <split [224/25]> Fold04 <fit[+]> <tibble [25 x 8]>    320.
+#>  5 <split [224/25]> Fold05 <fit[+]> <tibble [25 x 8]>    301.
+#>  6 <split [224/25]> Fold06 <fit[+]> <tibble [25 x 8]>    395.
+#>  7 <split [224/25]> Fold07 <fit[+]> <tibble [25 x 8]>    339.
+#>  8 <split [224/25]> Fold08 <fit[+]> <tibble [25 x 8]>    328.
+#>  9 <split [224/25]> Fold09 <fit[+]> <tibble [25 x 8]>    256.
+#> 10 <split [226/23]> Fold10 <fit[+]> <tibble [23 x 8]>    318.
 ```
 
 When you put it like *that*, it doesn't look like so much work! But, this way hides how much work it takes to write those 3 custom functions: `get_fits()`, `get_preds()`, and `get_rmse()`. And we still had to use vanilla `map()`, `map2()`, *and* `map2_dbl()`.
@@ -755,16 +802,16 @@ penguin_party
 #> # A tibble: 10 x 4
 #>    splits           id     .metrics         .notes          
 #>    <list>           <chr>  <list>           <list>          
-#>  1 <split [225/26]> Fold01 <tibble [2 × 3]> <tibble [0 × 1]>
-#>  2 <split [226/25]> Fold02 <tibble [2 × 3]> <tibble [0 × 1]>
-#>  3 <split [226/25]> Fold03 <tibble [2 × 3]> <tibble [0 × 1]>
-#>  4 <split [226/25]> Fold04 <tibble [2 × 3]> <tibble [0 × 1]>
-#>  5 <split [226/25]> Fold05 <tibble [2 × 3]> <tibble [0 × 1]>
-#>  6 <split [226/25]> Fold06 <tibble [2 × 3]> <tibble [0 × 1]>
-#>  7 <split [226/25]> Fold07 <tibble [2 × 3]> <tibble [0 × 1]>
-#>  8 <split [226/25]> Fold08 <tibble [2 × 3]> <tibble [0 × 1]>
-#>  9 <split [226/25]> Fold09 <tibble [2 × 3]> <tibble [0 × 1]>
-#> 10 <split [226/25]> Fold10 <tibble [2 × 3]> <tibble [0 × 1]>
+#>  1 <split [223/26]> Fold01 <tibble [2 x 4]> <tibble [0 x 1]>
+#>  2 <split [224/25]> Fold02 <tibble [2 x 4]> <tibble [0 x 1]>
+#>  3 <split [224/25]> Fold03 <tibble [2 x 4]> <tibble [0 x 1]>
+#>  4 <split [224/25]> Fold04 <tibble [2 x 4]> <tibble [0 x 1]>
+#>  5 <split [224/25]> Fold05 <tibble [2 x 4]> <tibble [0 x 1]>
+#>  6 <split [224/25]> Fold06 <tibble [2 x 4]> <tibble [0 x 1]>
+#>  7 <split [224/25]> Fold07 <tibble [2 x 4]> <tibble [0 x 1]>
+#>  8 <split [224/25]> Fold08 <tibble [2 x 4]> <tibble [0 x 1]>
+#>  9 <split [224/25]> Fold09 <tibble [2 x 4]> <tibble [0 x 1]>
+#> 10 <split [226/23]> Fold10 <tibble [2 x 4]> <tibble [0 x 1]>
 ```
 
 
@@ -774,11 +821,11 @@ Now, to see all the stuff inside this `penguin_party`, we can use tune's `collec
 ```r
 penguin_party %>% 
   collect_metrics()
-#> # A tibble: 2 x 5
-#>   .metric .estimator    mean     n std_err
-#>   <chr>   <chr>        <dbl> <int>   <dbl>
-#> 1 rmse    standard   347.       10 14.8   
-#> 2 rsq     standard     0.839    10  0.0141
+#> # A tibble: 2 x 6
+#>   .metric .estimator    mean     n std_err .config             
+#>   <chr>   <chr>        <dbl> <int>   <dbl> <chr>               
+#> 1 rmse    standard   315.       10 11.6    Preprocessor1_Model1
+#> 2 rsq     standard     0.844    10  0.0185 Preprocessor1_Model1
 ```
 
 To see the predictions, we need to add use [`control_resamples()`](https://tidymodels.github.io/tune/reference/control_grid.html):
@@ -800,20 +847,20 @@ Then we collect the predictions.
 ```r
 penguin_party %>% 
   collect_predictions()
-#> # A tibble: 251 x 4
-#>    id     .pred  .row body_mass_g
-#>    <chr>  <dbl> <int>       <int>
-#>  1 Fold01 3402.     4        3625
-#>  2 Fold01 3402.    11        3325
-#>  3 Fold01 3988.    14        3950
-#>  4 Fold01 3988.    41        3700
-#>  5 Fold01 3402.    54        3700
-#>  6 Fold01 3988.    65        3950
-#>  7 Fold01 3988.    70        4450
-#>  8 Fold01 3402.    71        3300
-#>  9 Fold01 3402.    76        3075
-#> 10 Fold01 3402.    85        2900
-#> # … with 241 more rows
+#> # A tibble: 249 x 5
+#>    id     .pred  .row body_mass_g .config             
+#>    <chr>  <dbl> <int>       <int> <chr>               
+#>  1 Fold01 3428.     4        3200 Preprocessor1_Model1
+#>  2 Fold01 3428.    11        3800 Preprocessor1_Model1
+#>  3 Fold01 3979.    14        3550 Preprocessor1_Model1
+#>  4 Fold01 3428.    25        3000 Preprocessor1_Model1
+#>  5 Fold01 3428.    36        3550 Preprocessor1_Model1
+#>  6 Fold01 3979.    40        4050 Preprocessor1_Model1
+#>  7 Fold01 3428.    64        3550 Preprocessor1_Model1
+#>  8 Fold01 3428.    69        2900 Preprocessor1_Model1
+#>  9 Fold01 3979.    70        4100 Preprocessor1_Model1
+#> 10 Fold01 3428.    84        3350 Preprocessor1_Model1
+#> # ... with 239 more rows
 ```
 
 Now, isn't that better?

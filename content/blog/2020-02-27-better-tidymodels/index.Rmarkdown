@@ -27,6 +27,7 @@ output:
 ```{r include=FALSE}
 library(tidyverse)
 library(tidymodels)
+library(emo)
 
 knitr::opts_chunk$set(comment = "#>",
                       fig.path = "figs/",
