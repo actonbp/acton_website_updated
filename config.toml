@@ -38,13 +38,12 @@ pygmentsUseClasses = true  # use class names instead of directly inserting color
 [params]
   orgName = "Bryan Acton"
   orgLocal = ""
-  #description = "A modern, beautiful, and easily configurable blog theme for Hugo."
   description = "Personal website of Bryan Acton"
   #favicon = "/img/favicon.ico"
   favicon = "/img/logo_2.png"
   #logo = "/img/blogophonic-mark-dark.png"
   logo = "/img/logo_2.png"
-  mainSections = ["blog", "talk", "publication", "project"]
+  mainSections = ["blog", "publication", "project"]
   navallcaps = true
   # show/hide social icons in site header & footer
   # configure social icons and links below in [[params.social]]
@@ -79,12 +78,13 @@ pygmentsUseClasses = true  # use class names instead of directly inserting color
   textFontFamily = "sans-serif"
   #headingFontFamily = "serif"
   #textFontFamily = "avenir"
-  headingFontFamily = "athelas"
+  #headingFontFamily = "athelas
+  headingFontFamily = "sans-serif"
 
   # Configuration of https://utteranc.es/ for comments
   [params.utterances]
     use_utterances = true
-    repo_name = "actonbp/acton_website_updated"
+    repo_name = "actonbp/acton_website"
     issue_term = "title" # url, pathname, or title
     theme = "boxy-light" # TODO: change to "preferred-color-scheme" when you enable dark mode toggle
     label = "comments :crystal_ball:"

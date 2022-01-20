@@ -9,6 +9,7 @@ tags:
   - tidymodels
 summary: Taking a sad script and making it better for model cross-validation.
 featured: no
+draft: yes
 disable_jquery: no
 image:
   caption: Image by [Rachel Martin](https://unsplash.com/photos/PnAc2UaeqII)
