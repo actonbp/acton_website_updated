@@ -51,7 +51,7 @@ pygmentsUseClasses = true  # use class names instead of directly inserting color
   socialInFooter = true
   # Default image for social sharing and search engines. 
   # Place image file in `static` folder and specify image name here.
-  sharing_image = "/img/avatar.png"
+  sharing_image = "/img/headshot2.jpg"
   # Twitter username (without @). Used when a visitor shares your site on Twitter.
   twitter = "bp_acton"
   
