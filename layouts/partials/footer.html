@@ -1,0 +1,82 @@
+<footer class="site-footer">
+  {{ with site.GetPage "license.md" }}
+  <p class="powered-by">
+      {{ printf "<a href=\"%s\">%s <br> %s </a>" .RelPermalink .Title .LinkTitle | safeHTML }}<br>
+  </p>
+  {{ end }}
+  
+  <footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      {{ if ne site.Copyright "" }}{{ site.Copyright | safeHTML }}{{ else }}&copy; {{ now.Format "2006"}}{{ if site.Params.orgName }} {{ site.Params.orgName }}{{ end }}{{ if site.Params.orgLocal }}, {{ site.Params.orgLocal }}{{ end }}{{ end }}
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      <br />
+      {{ partial "shared/attribution.html" }}
+    </p>
+    {{ if and (not .IsHome) (site.Params.socialInFooter) }}
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      {{ partial "shared/social-links.html" . }}
+    </div>
+    {{ end }}
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      {{ range site.Menus.footer }}
+      <a class="dib pv1 ph2 link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+      {{ end }}
+    </div>
+  </nav>
+  <script src="//yihui.org/js/math-code.js" type="text/javascript"></script>
+  <script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">  </script>
+</footer>
+
+.MathJax {
+font-size: 5.3em;
+}
+
+<!-- Loading mathjax macro -->
+<!-- Load mathjax -->
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <!-- MathJax configuration -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    <!-- End of mathjax configuration -->
+	
+  <p class="powered-by">
+    {{ with site.Copyright }}{{ replace . "{year}" now.Year | markdownify}} &middot; {{ end }}
+
+    <i class="fas fa-lightbulb" style="color:#e5be00"></i></a>
+    Created with curiosity, 
+    <a href="https://github.com/spcanelon/silvia" target="_blank" rel="noopener">
+      <i class="fas fa-code-branch" style="color:#e5be00"></i></a>, the
+    <a href="https://cran.r-project.org/" target="_blank" rel="noopener">
+      <i class="fab fa-r-project"></i> </a>
+    <a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    {{ if not (in (slice "docs" "updates") .Type) }}
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    {{ end }}
+  </p>
+</footer>
