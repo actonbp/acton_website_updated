@@ -1,17 +1,18 @@
 ---
-action_label: Read More &rarr;
-action_link: /about
-action_type: text
-description: My name is Dr. Bryan Acton and I work in the centre for leadership and followership with a set of wonderful colleagues including Robert Lord. I am interested in cutting-edge data analytic approaches for answering questions about our social world. I am particularly interested in studying leadership in collectives.  
-image_left: true
-sharing_image: "img/bryansocial.png""
+title: "Bryan Acton"
+subtitle: "Postdoctoral Researcher at Durham University Business School"
+description: "My name is Dr. Bryan Acton and I work in the centre for leadership and followership with a set of wonderful colleagues including Robert Lord. I am interested in cutting-edge data analytic approaches for answering questions about our social world. I am particularly interested in studying leadership in collectives."
+sharing_image: "img/bryansocial.png"
 images:
-- img/avatar.png
-show_action_link: true
-show_social_links: true
-subtitle: Post-doctoral Research Scholar @ Durham University (UK) Business School
+  - img/avatar.png
+image_alt_text: "Picture of me"
+image_left: false
 text_align_left: false
-title: Bryan Acton
+show_social_links: true # specify social accounts in site config
+show_action_link: true
+action_link: /about
+action_label: "Learn more about me &rarr;"
+action_type: text # text, button
 type: home
 ---
 
