@@ -29,6 +29,10 @@
   <script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">  </script>
 </footer>
 
+.MathJax {
+font-size: 5.3em;
+}
+
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
