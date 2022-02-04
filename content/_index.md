@@ -6,7 +6,7 @@ sharing_image: "img/bryansocial.png"
 images:
   - img/avatar.png
 image_alt_text: "Picture of me"
-image_left: false
+image_left: true
 text_align_left: false
 show_social_links: true # specify social accounts in site config
 show_action_link: true
