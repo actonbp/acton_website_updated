@@ -1,10 +1,8 @@
 ---
 author: Bryan Acton
 categories:
-- Theme Features
-- R
-- package
-date: "2019-07-02"
+- Research
+date: "2022-03-15"
 draft: false
 excerpt: In progress
 layout: single-sidebar
