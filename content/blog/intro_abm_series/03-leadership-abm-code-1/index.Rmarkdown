@@ -1,5 +1,5 @@
 ---
-title: Introduction to Building Agent-Based Models for Leadership/Teams
+title: A Gentle Introduction to Building Agent-Based Models for Leadership/Teams
 layout: single
 author: Bryan Acton
 draft: false
@@ -31,6 +31,18 @@ knitr::knit_engines$set(netlogo = function(options) {
   # whatever you want with it
 })
 ```
+# Prerequisites
+
+While I hope this post will appeal to a large spectrum of readers, it is designed for those that:
+
+- Study or are interested in collectives, groups, teams
+- Want to learn about agent-based modeling 
+- Want a gentle, low-level introduction
+
+# What and why agent-based modeling? 
+
+Leadership, teams, and groups often consist of bottom-up dynamics. For example, in a team of 5 people, how does a collective phenomenon such as climate or culture emerge? How do individual level entities interact to create something collective? This refers to the idea of emergence and there is a large literature on the topic. If you are interested, I might start [here][here][here], or [here]
+
 
 # Walkthrough of code for simulation `r emo::ji("point_down")`
 
