@@ -8,6 +8,7 @@ show_intro: true
 intro: |
   | I've been using [R](https://www.r-project.org/about.html) to all aspects of my research and my work. This is my brand new website I built using R, so please be patient as I update it with all of my work. Keep up with my work including my tutorials in my [blog](/blog) and my current research projects in [projects](/project). Sign up for my office hours here: [office hours](/open-office-hours). |
   
+  "What I cannot create, I do not understand" -Richard Feyman
   
   **See my updated CV [here](/cv/cv.html)** |
   **See my current todo list [here](/todo)**
