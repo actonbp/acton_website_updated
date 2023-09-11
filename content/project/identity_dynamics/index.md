@@ -23,5 +23,4 @@ tags:
 title: Leader Identity System Dynamics
 ---
 
-<iframe src="http://3.16.57.112:3838/app_2" width="800" height="1000"></iframe>
-
+This project is about studying leader identity from a systems dynamics perspective. 
